@@ -109,13 +109,18 @@ platform :ios do
 
     project_or_workspace_path = project_path || workspace_path
 
+    ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "120"
+    skip_package_dependencies: true
+
+
     update_code_signing_settings(
       use_automatic_signing: false,
       team_id: main_team_id,
       code_sign_identity: "Apple Distribution",
       path: project_or_workspace_path,
-      targets: main_target,
-      profile_name: main_profile
+      targets: [main_target],
+      profile_name: main_profile,
+      code_sign_style: "Manual"
     )
 
     update_code_signing_settings(
@@ -123,8 +128,9 @@ platform :ios do
       team_id: main_team_id,
       code_sign_identity: "Apple Distribution",
       path: project_or_workspace_path,
-      targets: notif_target,
-      profile_name: ext_profile
+      targets: [notif_target],
+      profile_name: ext_profile,
+      code_sign_style: "Manual"
     )
 
     provisioning_profiles = {}
