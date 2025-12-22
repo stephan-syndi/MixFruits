@@ -16,11 +16,12 @@ struct RecipeCardView: View {
             // Image
             ZStack {
                 if let name = recipe.imageName {
-                    Image(systemName: name)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 96, height: 96)
+                    RemoteImageView(name: name, placeholder: Image(systemName: name), contentMode: .fill, height: 96)
+                        .frame(width: 96)
+                        .background(Color(UIColor.secondarySystemBackground))
                         .clipped()
+                        .clipShape(RoundedRectangle(cornerRadius: 14, style: .circular)
+                        )
                 } else {
                     RoundedRectangle(cornerRadius: 8)
                         .fill(Color.gray.opacity(0.3))

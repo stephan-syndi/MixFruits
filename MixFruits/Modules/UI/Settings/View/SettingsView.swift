@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SettingsView: View {
     @AppStorage("settings.enableTimers") private var enableTimers: Bool = true
@@ -30,12 +31,26 @@ struct SettingsView: View {
                     } label: {
                         Label("Clear saved images", systemImage: "photo.on.rectangle.angled")
                     }
-
+                    
                     Button(role: .destructive) {
                         showResetRecipesConfirmation = true
                     } label: {
                         Label("Reset recipes to bundled sample", systemImage: "arrow.counterclockwise")
                     }
+                    HStack {
+                        Spacer()
+                        Button {
+                            // Open privacy policy in device browser
+                            if let url = URL(string: "https://example.com/privacy") {
+                                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                            }
+                        } label: {
+                            Text("Privacy Policy")
+                        }
+                        .buttonStyle(.bordered)
+                        Spacer()
+                    }
+                    .padding(.top, 8)
                 }
 
                 if let msg = infoMessage {

@@ -19,23 +19,10 @@ struct RecipeDetailView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
                     if let name = recipe.imageName {
-                        // Try loading an image saved in the app documents first, otherwise treat as SF Symbol / asset name
-                        if let ui = ImageFileStorage.loadImage(named: name) {
-                            Image(uiImage: ui)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(height: 200)
-                                .frame(maxWidth: .infinity)
-                                .clipped()
-                                .background(Color(UIColor.secondarySystemBackground))
-                        } else {
-                            Image(systemName: name)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 200)
-                                .frame(maxWidth: .infinity)
-                                .background(Color(UIColor.secondarySystemBackground))
-                        }
+                        RemoteImageView(name: name, placeholder: Image(systemName: name), contentMode: .fill, height: 240)
+                            .frame(maxWidth: .infinity)
+                            .background(Color(UIColor.secondarySystemBackground))
+                            .clipShape(RoundedRectangle(cornerRadius: 14, style: .circular))
                     }
 
                     Text(recipe.title)
@@ -92,20 +79,8 @@ struct RecipeDetailView: View {
                                 ForEach(recipe.stages.indices, id: \.self) { idx in
                                     let s = recipe.stages[idx]
                                     VStack(alignment: .leading, spacing: 8) {
-                                        if let img = s.imageName, let ui = ImageFileStorage.loadImage(named: img) {
-                                            Image(uiImage: ui)
-                                                .resizable()
-                                                .scaledToFill()
-                                                .frame(width: 220, height: 120)
-                                                .clipped()
-                                                .cornerRadius(8)
-                                        } else {
-                                            Rectangle()
-                                                .fill(Color(UIColor.secondarySystemBackground))
-                                                .frame(width: 220, height: 120)
-                                                .overlay(Image(systemName: "photo").foregroundColor(.secondary))
-                                                .cornerRadius(8)
-                                        }
+                                        RemoteImageView(name: s.imageName, placeholder: Image(systemName: "photo"), contentMode: .fill, height: 120, width: 220)
+                                            .cornerRadius(8)
 
                                         Text(s.title)
                                             .font(.headline)

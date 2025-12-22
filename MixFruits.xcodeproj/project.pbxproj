@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41C90DD32EF57B7A00CD1F24 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 41C90DD22EF57B7A00CD1F24 /* Storage */; };
 		41D6D6D42EE1E314004CD36B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 41D6D6D32EE1E314004CD36B /* Swinject */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C90DD32EF57B7A00CD1F24 /* Storage in Frameworks */,
 				41D6D6D42EE1E314004CD36B /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +73,7 @@
 			name = MixFruits;
 			packageProductDependencies = (
 				41D6D6D32EE1E314004CD36B /* Swinject */,
+				41C90DD22EF57B7A00CD1F24 /* Storage */,
 			);
 			productName = MixFruits;
 			productReference = 4136EF7F2ED99567003DB36E /* MixFruits.app */;
@@ -102,6 +105,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				41D6D6D22EE1E314004CD36B /* XCRemoteSwiftPackageReference "Swinject" */,
+				41C90DD12EF57B7A00CD1F24 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4136EF802ED99567003DB36E /* Products */;
@@ -343,6 +347,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		41C90DD12EF57B7A00CD1F24 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
 		41D6D6D22EE1E314004CD36B /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject";
@@ -354,6 +366,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		41C90DD22EF57B7A00CD1F24 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41C90DD12EF57B7A00CD1F24 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
 		41D6D6D32EE1E314004CD36B /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 41D6D6D22EE1E314004CD36B /* XCRemoteSwiftPackageReference "Swinject" */;
