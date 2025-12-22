@@ -109,25 +109,46 @@ platform :ios do
 
     project_or_workspace_path = project_path || workspace_path
 
-    update_code_signing_settings(
-      use_automatic_signing: false,
-      team_id: main_team_id,
-      code_sign_identity: "Apple Distribution",
-      path: project_or_workspace_path,
-      targets: main_target,
-      build_configurations: ["Release"],
-      profile_name: main_profile
-    )
+    # update_code_signing_settings(
+    #   use_automatic_signing: false,
+    #   team_id: main_team_id,
+    #   code_sign_identity: "Apple Distribution",
+    #   path: project_or_workspace_path,
+    #   targets: main_target,
+    #   build_configurations: ["Release"],
+    #   profile_name: main_profile
+    # )
 
-    update_code_signing_settings(
-      use_automatic_signing: false,
-      team_id: main_team_id,
-      code_sign_identity: "Apple Distribution",
-      path: project_or_workspace_path,
-      targets: notif_target,
-      build_configurations: ["Release"],
-      profile_name: ext_profile
-    )
+    # update_code_signing_settings(
+    #   use_automatic_signing: false,
+    #   team_id: main_team_id,
+    #   code_sign_identity: "Apple Distribution",
+    #   path: project_or_workspace_path,
+    #   targets: notif_target,
+    #   build_configurations: ["Release"],
+    #   profile_name: ext_profile
+    # )
+
+update_code_signing_settings(
+  use_automatic_signing: false,
+  team_id: main_team_id,
+  code_sign_identity: "Apple Distribution",
+  path: project_or_workspace_path,
+  bundle_identifier: main_bundle,
+  profile_name: main_profile,
+  build_configurations: ["Release"]
+)
+
+update_code_signing_settings(
+  use_automatic_signing: false,
+  team_id: main_team_id,
+  code_sign_identity: "Apple Distribution",
+  path: project_or_workspace_path,
+  bundle_identifier: ext_bundle,
+  profile_name: ext_profile,
+  build_configurations: ["Release"]
+)
+
 
     provisioning_profiles = {}
     provisioning_profiles[main_bundle] = main_profile if main_bundle && main_profile
