@@ -32,13 +32,18 @@ jobs:
 
       - name: SSH debug (optional)
         if: ${{ env.MATCH_DEPLOY_KEY != '' }}
-        shell: bash
         run: |
           mkdir -p ~/.ssh
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           ssh -T git@github.com || true
 
-      - name: Sync certificates via fastlane (как в CI_Core)
-        shell: bash
+      - name: Create keychain
+        run: |
+          security create-keychain -p "" build.keychain
+          security default-keychain -s build.keychain
+          security unlock-keychain -p "" build.keychain
+          security set-keychain-settings -lut 21600 build.keychain
+
+      - name: Sync certificates via fastlane
         run: |
           bundle exec fastlane ios sync_certificates
