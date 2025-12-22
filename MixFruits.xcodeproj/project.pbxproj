@@ -7,18 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		413CCE0E2EF94E1200B7478C /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 413CCE072EF94E1200B7478C /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		413CCE702EF94F8000B7478C /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCE6C2EF94F7900B7478C /* FirebaseCore.framework */; };
+		413CCEAC2EF94FA100B7478C /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAB2EF94FA100B7478C /* FirebaseMessaging.framework */; };
+		413CCEAF2EF94FBC00B7478C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */; };
+		413CCEB12EF94FCB00B7478C /* AppsFlyerLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEB02EF94FCB00B7478C /* AppsFlyerLib.xcframework */; };
+		413CCEB52EF94FD600B7478C /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEB42EF94FD600B7478C /* FirebaseCore.framework */; };
+		413CCEB92EF94FE000B7478C /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEB82EF94FE000B7478C /* FirebaseMessaging.framework */; };
+		413CCEBC2EF94FEB00B7478C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */; };
 		41C90DD32EF57B7A00CD1F24 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 41C90DD22EF57B7A00CD1F24 /* Storage */; };
 		41D6D6D42EE1E314004CD36B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 41D6D6D32EE1E314004CD36B /* Swinject */; };
+		8BAF3AE59192C1C5A231C5F2 /* Pods_MixFruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E26CE0829483787D66FBF5 /* Pods_MixFruits.framework */; };
+		BDF4300A860C024D25896299 /* Pods_notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB295D4B1A7FF8081957AF0A /* Pods_notifications.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		413CCE0C2EF94E1200B7478C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4136EF772ED99567003DB36E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 413CCE062EF94E1200B7478C;
+			remoteInfo = notifications;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		413CCE132EF94E1200B7478C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				413CCE0E2EF94E1200B7478C /* notifications.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4136EF7F2ED99567003DB36E /* MixFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		413CCE072EF94E1200B7478C /* notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		413CCE6C2EF94F7900B7478C /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		413CCEAB2EF94FA100B7478C /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		413CCEB02EF94FCB00B7478C /* AppsFlyerLib.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:6UQAD4B3U2:APPSFLYER LTD"; lastKnownFileType = wrapper.xcframework; name = AppsFlyerLib.xcframework; path = Pods/AppsFlyerFramework/binaries/xcframework/full/AppsFlyerLib.xcframework; sourceTree = "<group>"; };
+		413CCEB42EF94FD600B7478C /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		413CCEB82EF94FE000B7478C /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA39496A4BAA127CB2CDD03 /* Pods-notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.release.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.release.xcconfig"; sourceTree = "<group>"; };
+		A974FB3E46FC06367C95F750 /* Pods-notifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.debug.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.debug.xcconfig"; sourceTree = "<group>"; };
+		E6E26CE0829483787D66FBF5 /* Pods_MixFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB295D4B1A7FF8081957AF0A /* Pods_notifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50B08B77856C2AE7CE80593 /* Pods-MixFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixFruits.release.xcconfig"; path = "Target Support Files/Pods-MixFruits/Pods-MixFruits.release.xcconfig"; sourceTree = "<group>"; };
+		FE72C8B04C319AB3DDCB0C6D /* Pods-MixFruits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixFruits.debug.xcconfig"; path = "Target Support Files/Pods-MixFruits/Pods-MixFruits.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		413CCE0F2EF94E1200B7478C /* Exceptions for "notifications" folder in "notifications" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 413CCE062EF94E1200B7478C /* notifications */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4136EF812ED99567003DB36E /* MixFruits */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MixFruits;
+			sourceTree = "<group>";
+		};
+		413CCE082EF94E1200B7478C /* notifications */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				413CCE0F2EF94E1200B7478C /* Exceptions for "notifications" folder in "notifications" target */,
+			);
+			path = notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -28,8 +93,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413CCEB92EF94FE000B7478C /* FirebaseMessaging.framework in Frameworks */,
+				413CCEB12EF94FCB00B7478C /* AppsFlyerLib.xcframework in Frameworks */,
+				413CCEB52EF94FD600B7478C /* FirebaseCore.framework in Frameworks */,
 				41C90DD32EF57B7A00CD1F24 /* Storage in Frameworks */,
 				41D6D6D42EE1E314004CD36B /* Swinject in Frameworks */,
+				8BAF3AE59192C1C5A231C5F2 /* Pods_MixFruits.framework in Frameworks */,
+				413CCEBC2EF94FEB00B7478C /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413CCE042EF94E1200B7478C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413CCEAF2EF94FBC00B7478C /* UserNotifications.framework in Frameworks */,
+				413CCEAC2EF94FA100B7478C /* FirebaseMessaging.framework in Frameworks */,
+				413CCE702EF94F8000B7478C /* FirebaseCore.framework in Frameworks */,
+				BDF4300A860C024D25896299 /* Pods_notifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				4136EF812ED99567003DB36E /* MixFruits */,
+				413CCE082EF94E1200B7478C /* notifications */,
 				4136EF802ED99567003DB36E /* Products */,
+				EA10536239F1EE4B3437EB9F /* Pods */,
+				9969480C5D28ADD59DD6740B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +132,35 @@
 			isa = PBXGroup;
 			children = (
 				4136EF7F2ED99567003DB36E /* MixFruits.app */,
+				413CCE072EF94E1200B7478C /* notifications.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9969480C5D28ADD59DD6740B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				413CCEB82EF94FE000B7478C /* FirebaseMessaging.framework */,
+				413CCEB42EF94FD600B7478C /* FirebaseCore.framework */,
+				413CCEB02EF94FCB00B7478C /* AppsFlyerLib.xcframework */,
+				413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */,
+				413CCEAB2EF94FA100B7478C /* FirebaseMessaging.framework */,
+				413CCE6C2EF94F7900B7478C /* FirebaseCore.framework */,
+				E6E26CE0829483787D66FBF5 /* Pods_MixFruits.framework */,
+				EB295D4B1A7FF8081957AF0A /* Pods_notifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA10536239F1EE4B3437EB9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE72C8B04C319AB3DDCB0C6D /* Pods-MixFruits.debug.xcconfig */,
+				F50B08B77856C2AE7CE80593 /* Pods-MixFruits.release.xcconfig */,
+				A974FB3E46FC06367C95F750 /* Pods-notifications.debug.xcconfig */,
+				4CA39496A4BAA127CB2CDD03 /* Pods-notifications.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,13 +170,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4136EF8A2ED9956E003DB36E /* Build configuration list for PBXNativeTarget "MixFruits" */;
 			buildPhases = (
+				779EF9513EC78B7733A6A0FB /* [CP] Check Pods Manifest.lock */,
 				4136EF7B2ED99567003DB36E /* Sources */,
 				4136EF7C2ED99567003DB36E /* Frameworks */,
 				4136EF7D2ED99567003DB36E /* Resources */,
+				D29958BFCD8C41F043EE7FEC /* [CP] Embed Pods Frameworks */,
+				5812B852EEBEE26382233E51 /* [CP] Copy Pods Resources */,
+				413CCE132EF94E1200B7478C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				413CCE0D2EF94E1200B7478C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				4136EF812ED99567003DB36E /* MixFruits */,
@@ -79,6 +195,28 @@
 			productReference = 4136EF7F2ED99567003DB36E /* MixFruits.app */;
 			productType = "com.apple.product-type.application";
 		};
+		413CCE062EF94E1200B7478C /* notifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413CCE102EF94E1200B7478C /* Build configuration list for PBXNativeTarget "notifications" */;
+			buildPhases = (
+				EF4BCC4FC5E803CE0FBFF810 /* [CP] Check Pods Manifest.lock */,
+				413CCE032EF94E1200B7478C /* Sources */,
+				413CCE042EF94E1200B7478C /* Frameworks */,
+				413CCE052EF94E1200B7478C /* Resources */,
+				CBE23F45A3B0B17ACD2CA418 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				413CCE082EF94E1200B7478C /* notifications */,
+			);
+			name = notifications;
+			productName = notifications;
+			productReference = 413CCE072EF94E1200B7478C /* notifications.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -90,6 +228,9 @@
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					4136EF7E2ED99567003DB36E = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					413CCE062EF94E1200B7478C = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
@@ -113,6 +254,7 @@
 			projectRoot = "";
 			targets = (
 				4136EF7E2ED99567003DB36E /* MixFruits */,
+				413CCE062EF94E1200B7478C /* notifications */,
 			);
 		};
 /* End PBXProject section */
@@ -125,7 +267,124 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		413CCE052EF94E1200B7478C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5812B852EEBEE26382233E51 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MixFruits/Pods-MixFruits-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MixFruits/Pods-MixFruits-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MixFruits/Pods-MixFruits-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		779EF9513EC78B7733A6A0FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MixFruits-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBE23F45A3B0B17ACD2CA418 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-notifications/Pods-notifications-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-notifications/Pods-notifications-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-notifications/Pods-notifications-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D29958BFCD8C41F043EE7FEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MixFruits/Pods-MixFruits-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MixFruits/Pods-MixFruits-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MixFruits/Pods-MixFruits-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF4BCC4FC5E803CE0FBFF810 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-notifications-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4136EF7B2ED99567003DB36E /* Sources */ = {
@@ -135,7 +394,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		413CCE032EF94E1200B7478C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		413CCE0D2EF94E1200B7478C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 413CCE062EF94E1200B7478C /* notifications */;
+			targetProxy = 413CCE0C2EF94E1200B7478C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4136EF882ED9956E003DB36E /* Debug */ = {
@@ -259,67 +533,153 @@
 		};
 		4136EF8B2ED9956E003DB36E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE72C8B04C319AB3DDCB0C6D /* Pods-MixFruits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = MixFruits/MixFruits.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Creating own recipe";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kraken.MixFruits;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipeworld.mixfruit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4136EF8C2ED9956E003DB36E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F50B08B77856C2AE7CE80593 /* Pods-MixFruits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = MixFruits/MixFruits.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Creating own recipe";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kraken.MixFruits;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipeworld.mixfruit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		413CCE112EF94E1200B7478C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A974FB3E46FC06367C95F750 /* Pods-notifications.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notifications/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notifications;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipeworld.mixfruit.notifications;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		413CCE122EF94E1200B7478C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA39496A4BAA127CB2CDD03 /* Pods-notifications.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notifications/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notifications;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipeworld.mixfruit.notifications;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -340,6 +700,15 @@
 			buildConfigurations = (
 				4136EF8B2ED9956E003DB36E /* Debug */,
 				4136EF8C2ED9956E003DB36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413CCE102EF94E1200B7478C /* Build configuration list for PBXNativeTarget "notifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413CCE112EF94E1200B7478C /* Debug */,
+				413CCE122EF94E1200B7478C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

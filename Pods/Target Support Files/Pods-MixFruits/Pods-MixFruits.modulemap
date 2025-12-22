@@ -1,0 +1,6 @@
+framework module Pods_MixFruits {
+  umbrella header "Pods-MixFruits-umbrella.h"
+
+  export *
+  module * { export * }
+}

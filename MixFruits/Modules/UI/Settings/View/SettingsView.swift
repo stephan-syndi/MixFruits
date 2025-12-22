@@ -41,7 +41,7 @@ struct SettingsView: View {
                         Spacer()
                         Button {
                             // Open privacy policy in device browser
-                            if let url = URL(string: "https://example.com/privacy") {
+                            if let url = URL(string: "https://mixfruitsrecipes.com/privacy-policy.html") {
                                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
                             }
                         } label: {
