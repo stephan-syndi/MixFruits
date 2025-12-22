@@ -236,7 +236,7 @@ platform :ios do
       git_url: "git@github.com:#{match_org}/#{match_repo}.git",
       app_identifier: [main_app_bundle_id, extension_bundle_id],
       readonly: false,
-      keychain_name: "build.keychain",
+      keychain_name: "build.keychain-db",
       keychain_password: ""
     )
   end

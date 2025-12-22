@@ -51,6 +51,10 @@ jobs:
           find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
           echo "::endgroup::"
 
+      - name: Debug keychains
+         run: ls -la /Users/runner/Library/Keychains
+
+
       - name: Build (нативный через Fastlane)
         env:
           # App Store Connect
