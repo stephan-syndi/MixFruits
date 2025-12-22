@@ -555,6 +555,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MixFruits/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mix Fruits: Recipes";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to this app use your camera.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows microphone access.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allows photo library access.";
@@ -601,6 +602,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MixFruits/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mix Fruits: Recipes";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to this app use your camera.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows microphone access.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allows photo library access.";
