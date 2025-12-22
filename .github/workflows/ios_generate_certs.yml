@@ -44,6 +44,13 @@ jobs:
           security unlock-keychain -p "" build.keychain
           security set-keychain-settings -lut 21600 build.keychain
 
+      - name: Check identities
+        run: security find-identity -v -p codesigning
+
+
       - name: Sync certificates via fastlane
         run: |
           bundle exec fastlane ios sync_certificates
+
+      - name: Check identities
+        run: security find-identity -v -p codesigning
