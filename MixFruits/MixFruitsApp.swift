@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Swinject
+import AppTrackingTransparency
+import AdSupport
 
 @main
 struct MixFruitsApp: App {
@@ -37,6 +39,17 @@ struct MixFruitsApp: App {
                 let libraryVM = container.resolve(LibraryViewModel.self)
                 let bookmarkVM = container.resolve(BookmarkViewModel.self)
                 ContentView(libraryVM: libraryVM, bookmarkVM: bookmarkVM)
+                .onAppear{
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { requestTrackingPermission() }
+                }
+        }
+    }
+    
+    // ToDo: delete after adding gray side
+    private func requestTrackingPermission() {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+            }
         }
     }
 }

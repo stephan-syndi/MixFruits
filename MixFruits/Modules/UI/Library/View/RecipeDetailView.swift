@@ -122,6 +122,10 @@ struct RecipeDetailView: View {
         .sheet(isPresented: $isCooking) {
             CookingView(recipe: recipe)
         }
+        .onAppear {
+            // Notify app that this recipe was viewed so Home can update reactively
+            NotificationCenter.default.post(name: .mixfruitsRecipeViewed, object: recipe)
+        }
     }
 }
 

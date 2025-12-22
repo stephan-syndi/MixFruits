@@ -35,6 +35,20 @@ final class RecipeStore {
         return []
     }
 
+    /// Load only the persisted recipes file from Documents (do not read bundled samples).
+    /// - Throws: any file I/O or decoding error.
+    /// - Returns: an array of `Recipe` loaded from the persisted file (may be empty).
+    func loadPersisted() throws -> [Recipe] {
+        let url = try fileURL()
+        if FileManager.default.fileExists(atPath: url.path) {
+            let data = try Data(contentsOf: url)
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            return try decoder.decode([Recipe].self, from: data)
+        }
+        return []
+    }
+
     /// Load recipes asynchronously (executes on a background queue).
     func loadAsync() async throws -> [Recipe] {
         try await withCheckedThrowingContinuation { cont in

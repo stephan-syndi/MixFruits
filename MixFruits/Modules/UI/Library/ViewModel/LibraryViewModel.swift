@@ -30,6 +30,12 @@ class LibraryViewModel: ObservableObject {
             // If bundled decoding fails, fall back to in-code sample dataset.
             loadSampleData()
         }
+
+        // Observe bookmark add/remove notifications and update local recipe flags.
+        NotificationCenter.default.addObserver(self, selector: #selector(handleAddBookmarkNotification(_:)), name: .mixfruitsAddBookmark, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleRemoveBookmarkNotification(_:)), name: .mixfruitsRemoveBookmark, object: nil)
+        // Merge any persisted bookmarks so bundled library items reflect bookmarked state.
+        mergePersistedBookmarks()
     }
 
     /// Attempt to load recipes from the bundled `sample_recipes.json` resource.
@@ -111,6 +117,45 @@ class LibraryViewModel: ObservableObject {
             let matchesCategory = (selectedCategory == .all) || (r.category == selectedCategory)
 
             return matchesSearch && matchesIngredients && matchesTime && matchesDifficulty && matchesCategory
+        }
+    }
+
+    @objc private func handleAddBookmarkNotification(_ note: Notification) {
+        guard let recipe = note.object as? Recipe else { return }
+        if let idx = recipes.firstIndex(where: { $0.id == recipe.id }) {
+            recipes[idx].isBookmarked = true
+        }
+    }
+
+    @objc private func handleRemoveBookmarkNotification(_ note: Notification) {
+        guard let recipe = note.object as? Recipe else { return }
+        if let idx = recipes.firstIndex(where: { $0.id == recipe.id }) {
+            recipes[idx].isBookmarked = false
+        }
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
+    /// If there are persisted bookmarked recipes in Documents, mark matching bundled recipes as bookmarked.
+    private func mergePersistedBookmarks() {
+        DispatchQueue.global(qos: .utility).async {
+            do {
+                let persisted = try self.store.loadPersisted()
+                let bookmarkedIDs = Set(persisted.filter { $0.isBookmarked }.map { $0.id })
+                if !bookmarkedIDs.isEmpty {
+                    DispatchQueue.main.async {
+                        for idx in self.recipes.indices {
+                            if bookmarkedIDs.contains(self.recipes[idx].id) {
+                                self.recipes[idx].isBookmarked = true
+                            }
+                        }
+                    }
+                }
+            } catch {
+                // ignore - persisted file may not exist
+            }
         }
     }
 }

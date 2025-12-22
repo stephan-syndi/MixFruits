@@ -16,7 +16,7 @@
         "id": "f1a2b3c4-d5e6-47f8-9b0c-111213141516",
         "title": "Slice oranges",
         "description": "Peel and slice oranges into segments.",
-        "imageName": null,
+        "imageName": "1_1.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       },
@@ -24,7 +24,7 @@
         "id": "a2b3c4d5-e6f7-48a9-0c1d-212223242526",
         "title": "Prepare pomegranate",
         "description": "Remove seeds from pomegranate.",
-        "imageName": null,
+        "imageName": "1_2.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       },
@@ -32,7 +32,7 @@
         "id": "c3d4e5f6-0708-4910-1112-313233343536",
         "title": "Mix & drizzle",
         "description": "Combine fruits and drizzle with honey.",
-        "imageName": null,
+        "imageName": "1_3.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       },
@@ -40,7 +40,7 @@
         "id": "d4e5f6a7-0809-4a11-1213-414243444546",
         "title": "Garnish",
         "description": "Add mint leaves before serving.",
-        "imageName": null,
+        "imageName": "orange_pomegranate_salad.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       }
@@ -63,7 +63,7 @@
         "id": "e5f6a7b8-0911-4b12-1314-515253545556",
         "title": "Prepare filling",
         "description": "Dice apples, mix with sugar, cinnamon and raisins.",
-        "imageName": null,
+        "imageName": "2_1.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       },
@@ -71,7 +71,7 @@
         "id": "f6a7b8c9-1011-4c13-1415-616263646566",
         "title": "Roll pastry",
         "description": "Roll out puff pastry and add filling.",
-        "imageName": null,
+        "imageName": "2_2.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       },
@@ -79,7 +79,7 @@
         "id": "a7b8c9d0-1112-4d14-1516-717273747576",
         "title": "Bake",
         "description": "Bake at 180°C until golden.",
-        "imageName": null,
+        "imageName": "2_3.jpg",
         "timerEnabled": true,
         "timerMinutes": 30
       },
@@ -87,7 +87,7 @@
         "id": "b7c8d9e0-1213-4e15-1617-818283848586",
         "title": "Serve",
         "description": "Sprinkle with powdered sugar before serving.",
-        "imageName": null,
+        "imageName": "apple_strudel.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       }
@@ -110,7 +110,7 @@
         "id": "c8d9e0f1-1314-4f16-1718-919293949596",
         "title": "Slice bananas",
         "description": "Cut bananas into chunks.",
-        "imageName": null,
+        "imageName": "3_1.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       },
@@ -118,7 +118,7 @@
         "id": "d9e0f1a2-1415-5017-1819-a1a2a3a4a5a6",
         "title": "Blend",
         "description": "Blend bananas, yogurt and honey until smooth.",
-        "imageName": null,
+        "imageName": "3_3.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       },
@@ -126,7 +126,7 @@
         "id": "e0f1a2b3-1516-5218-1920-b1b2b3b4b5b6",
         "title": "Serve",
         "description": "Pour into glasses and enjoy.",
-        "imageName": null,
+        "imageName": "3_4.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       }
@@ -149,7 +149,7 @@
         "id": "f1e2d3c4-1617-5319-2021-c1c2c3c4c5c6",
         "title": "Prepare base",
         "description": "Crush biscuits and mix with melted butter.",
-        "imageName": null,
+        "imageName": "4_1.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       },
@@ -157,7 +157,7 @@
         "id": "a2b3c4d5-1718-5420-2122-d1d2d3d4d5d6",
         "title": "Make cream",
         "description": "Mix cream cheese with whipped cream.",
-        "imageName": null,
+        "imageName": "4_2.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       },
@@ -165,7 +165,7 @@
         "id": "b2c3d4e5-1819-5521-2223-e1e2e3e4e5e6",
         "title": "Assemble",
         "description": "Spread cream over base and top with strawberries.",
-        "imageName": null,
+        "imageName": "4_3.jpg",
         "timerEnabled": false,
         "timerMinutes": 0
       },
@@ -173,7 +173,7 @@
         "id": "c2d3e4f5-1920-5622-2324-f1f2f3f4f5f6",
         "title": "Chill",
         "description": "Refrigerate for 2 hours before serving.",
-        "imageName": null,
+        "imageName": "4_4.jpg",
         "timerEnabled": true,
         "timerMinutes": 120
       }

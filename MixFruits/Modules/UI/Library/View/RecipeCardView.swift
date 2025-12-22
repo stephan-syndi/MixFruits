@@ -11,6 +11,11 @@ struct RecipeCardView: View {
     var recipe: Recipe
     @State private var isBookmarkedState: Bool = false
 
+    init(recipe: Recipe) {
+        self.recipe = recipe
+        _isBookmarkedState = State(initialValue: recipe.isBookmarked)
+    }
+
     var body: some View {
         HStack(spacing: 16) {
             // Image
@@ -53,6 +58,12 @@ struct RecipeCardView: View {
                         withAnimation(.easeInOut) {
                             isBookmarkedState.toggle()
                         }
+                        // Post a notification so the shared BookmarkViewModel can update
+                        if isBookmarkedState {
+                            NotificationCenter.default.post(name: .mixfruitsAddBookmark, object: recipe)
+                        } else {
+                            NotificationCenter.default.post(name: .mixfruitsRemoveBookmark, object: recipe)
+                        }
                     } label: {
                         Image(systemName: isBookmarkedState ? "bookmark.fill" : "bookmark")
                             .foregroundColor(isBookmarkedState ? .accentColor : .gray)
@@ -67,7 +78,7 @@ struct RecipeCardView: View {
                     HStack(spacing: 8) {
                         InfoChip(systemImage: "clock", text: "\(recipe.minutes) min")
                         InfoChip(systemImage: "list.number", text: "\(recipe.steps) steps")
-                        InfoChip(systemImage: "flame", text: "Medium")
+                        InfoChip(systemImage: "flame", text: recipe.difficulty.rawValue)
                     }
                     .padding(.vertical, 4)
                 }

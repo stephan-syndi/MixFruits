@@ -28,7 +28,34 @@ class AppStatsViewModel: ObservableObject {
     private var libraryVM = LibraryViewModel()
 
     init() {
+        // Observe recipe viewed events to update lastRecipe reactively
+        NotificationCenter.default.addObserver(self, selector: #selector(recipeViewed(_:)), name: .mixfruitsRecipeViewed, object: nil)
+        // Also observe bookmark changes to update counts
+        NotificationCenter.default.addObserver(self, selector: #selector(bookmarksChanged(_:)), name: .mixfruitsAddBookmark, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(bookmarksChanged(_:)), name: .mixfruitsRemoveBookmark, object: nil)
+
         refresh()
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
+    @objc private func bookmarksChanged(_ note: Notification) {
+        // simple refresh of counts
+        bookmarksCount = BookmarkViewModel().bookmarks.count
+    }
+
+    @objc private func recipeViewed(_ note: Notification) {
+        if let recipe = note.object as? Recipe {
+            DispatchQueue.main.async {
+                self.lastRecipe = recipe
+                // prepend recent action
+                self.recentActions.insert(RecentAction(title: "Viewed: \(recipe.title)", date: Date()), at: 0)
+                // cap recent actions
+                if self.recentActions.count > 10 { self.recentActions.removeLast() }
+            }
+        }
     }
 
     func refresh() {

@@ -22,16 +22,21 @@ class BookmarkViewModel: ObservableObject {
         self.store = store
         self.draftStore = DraftStore()
 
-        // Try to load persisted bookmarks; fall back to sample data
+        // Listen to bookmark add/remove notifications from other parts of the app
+        NotificationCenter.default.addObserver(self, selector: #selector(handleAddNotification(_:)), name: .mixfruitsAddBookmark, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleRemoveNotification(_:)), name: .mixfruitsRemoveBookmark, object: nil)
+
+        // Try to load persisted bookmarks from Documents; fall back to sample data
         do {
-            let loaded = try store.load()
+            let loaded = try store.loadPersisted()
             if loaded.isEmpty {
-                loadSample()
+//                loadSample()
             } else {
                 bookmarks = loaded
             }
         } catch {
-            loadSample()
+            print("BookmarkViewModel: failed to load persisted bookmarks:", error)
+//            loadSample()
         }
 
         // Persist bookmarks whenever they change (debounced)
@@ -170,5 +175,22 @@ class BookmarkViewModel: ObservableObject {
         drafts.removeAll { $0.id == draft.id }
         cleanupUnusedImages()
         showToast("Черновик удалён")
+    }
+
+    @objc private func handleAddNotification(_ note: Notification) {
+        guard let recipe = note.object as? Recipe else { return }
+        // avoid duplicates
+        if !bookmarks.contains(where: { $0.id == recipe.id }) {
+            addBookmark(recipe)
+        }
+    }
+
+    @objc private func handleRemoveNotification(_ note: Notification) {
+        guard let recipe = note.object as? Recipe else { return }
+        removeBookmark(recipe)
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 }
