@@ -19,7 +19,7 @@ jobs:
       - name: Setup SSH for match (CI_Core style)
         env:
           MATCH_DEPLOY_KEY: ${{ secrets.MATCH_DEPLOY_KEY }}
-          MATCH_REPOSITORY: ${{ secrets.MATCH_REPOSITORY }}   # org/repo
+          MATCH_REPOSITORY: ${{ secrets.MATCH_REPOSITORY }}
         shell: bash
         run: |
           set -euo pipefail
@@ -45,38 +45,56 @@ jobs:
 
           ssh-keyscan -t rsa,ecdsa,ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null || true
 
-      - name: Dump full repo tree (no limits)
+      # 👉 ВОТ СЮДА ДОБАВЛЯЕМ
+      - name: Create keychain
         run: |
-          echo "::group::Repository tree"
-          find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
-          echo "::endgroup::"
+          security create-keychain -p "" build.keychain
+          security default-keychain -s build.keychain
+          security unlock-keychain -p "" build.keychain
+          security set-keychain-settings -lut 21600 build.keychain
 
-      - name: Build (нативный через Fastlane)
+      - name: Check identities BEFORE match
+        run: security find-identity -v -p codesigning
+
+      # 👉 match будет вызван внутри fastlane ios build → sync_certificates
+      # поэтому мы проверяем профили ПОСЛЕ sync_certificates, но ДО сборки
+      # для этого добавим отдельный lane или вызовем sync_certificates вручную
+
+      - name: Sync certificates only
         env:
-          # App Store Connect
           APPSTORE_ISSUER_ID:  ${{ secrets.APPSTORE_ISSUER_ID }}
           APPSTORE_KEY_ID:     ${{ secrets.APPSTORE_KEY_ID }}
           APPSTORE_P8:         ${{ secrets.APPSTORE_P8 }}
-
-          # Bundle ID
           IOS_BUNDLE_ID:       ${{ secrets.IOS_BUNDLE_ID }}
+          MATCH_REPOSITORY:    ${{ secrets.MATCH_REPOSITORY }}
+          MATCH_PASSWORD:      ${{ secrets.MATCH_PASSWORD }}
+          MATCH_DEPLOY_KEY:    ${{ secrets.MATCH_DEPLOY_KEY }}
+        run: |
+          bundle exec fastlane ios sync_certificates
 
-          # match/git
+      - name: Check identities AFTER match
+        run: security find-identity -v -p codesigning
+
+      - name: List provisioning profiles
+        run: ls -la ~/Library/MobileDevice/Provisioning\ Profiles || echo "No profiles"
+
+      # 👉 Теперь запускаем сборку
+      - name: Build (нативный через Fastlane)
+        env:
+          APPSTORE_ISSUER_ID:  ${{ secrets.APPSTORE_ISSUER_ID }}
+          APPSTORE_KEY_ID:     ${{ secrets.APPSTORE_KEY_ID }}
+          APPSTORE_P8:         ${{ secrets.APPSTORE_P8 }}
+          IOS_BUNDLE_ID:       ${{ secrets.IOS_BUNDLE_ID }}
           GH_PAT:              ${{ secrets.GH_PAT }}
           GITHUB_REPOSITORY:   ${{ github.repository }}
           MATCH_REPOSITORY:    ${{ secrets.MATCH_REPOSITORY }}
           MATCH_PASSWORD:      ${{ secrets.MATCH_PASSWORD }}
           MATCH_DEPLOY_KEY:    ${{ secrets.MATCH_DEPLOY_KEY }}
-
-          # Параметры сборки
-          IOS_SCHEME:          ${{ secrets.IOS_SCHEME }}       
-          PROJECT_NAME:        ${{ secrets.PROJECT_NAME }}     
-          # XCODE_WORKSPACE:   ${{ secrets.XCODE_WORKSPACE }}  
-          # XCODE_PROJECT:     ${{ secrets.XCODE_PROJECT }}    
+          IOS_SCHEME:          ${{ secrets.IOS_SCHEME }}
+          PROJECT_NAME:        ${{ secrets.PROJECT_NAME }}
           BUILD_NUMBER:        ${{ github.run_number }}
           GIT_FULL_NAME:       ci-bot
           GIT_USER_EMAIL:      ci-bot@local
-        shell: bash
         run: |
           git config --global user.name  "${GIT_FULL_NAME}"
           git config --global user.email "${GIT_USER_EMAIL}"
