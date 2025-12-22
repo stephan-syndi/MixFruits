@@ -109,10 +109,7 @@ platform :ios do
 
     project_or_workspace_path = project_path || workspace_path
 
-    ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "120"
-    skip_package_dependencies: true
-
-
+  
     update_code_signing_settings(
       use_automatic_signing: false,
       team_id: main_team_id,
