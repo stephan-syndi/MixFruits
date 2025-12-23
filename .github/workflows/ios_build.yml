@@ -87,6 +87,9 @@ jobs:
             echo "--------------------------------------"
           done 
 
+      - name: Install CocoaPods dependencies
+        run: pod install --repo-update
+
       # 👉 Теперь запускаем сборку
       - name: Build (нативный через Fastlane)
         env:
