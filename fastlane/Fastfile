@@ -307,9 +307,9 @@ platform :ios do
     main_team_id  = ENV["sigh_#{main_bundle}_appstore_team-id"]
 
     provisioning_profiles = {
-      main_bundle => main_profile,
-      ext_bundle  => ext_profile
-    }.compact
+      main_bundle => "AppStore_#{main_bundle}", 
+      ext_bundle => "AppStore_#{ext_bundle}"
+    }
 
     ipa_output_dir = File.join(repo_root, "build/iOS/ipa_out")
 
@@ -317,7 +317,7 @@ platform :ios do
     common = {
       scheme: scheme,
       export_method: "app-store",
-      export_team_id: main_team_id,
+      export_team_id: ENV["sigh_#{main_bundle}_appstore_team-id"],
       output_directory: ipa_output_dir,
       export_options: {
         method: "app-store",
