@@ -16,6 +16,9 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
+      - name: Update CocoaPods 
+        run: gem install cocoapods xcodeproj
+
       - name: Setup SSH for match (CI_Core style)
         env:
           MATCH_DEPLOY_KEY: ${{ secrets.MATCH_DEPLOY_KEY }}
