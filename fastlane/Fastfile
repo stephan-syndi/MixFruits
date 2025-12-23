@@ -116,9 +116,7 @@ platform :ios do
       path: project_or_workspace_path,
       targets: main_target,
       build_configurations: ["Release"],
-      profile_name: main_profile,
-      skip_package_dependencies_resolution: true, # ⬅️ допустимый параметр 
-      disable_package_automatic_updates: true
+      profile_name: main_profile
     )
 
     update_code_signing_settings(
@@ -128,9 +126,7 @@ platform :ios do
       path: project_or_workspace_path,
       targets: notif_target,
       build_configurations: ["Release"],
-      profile_name: ext_profile,
-      skip_package_dependencies_resolution: true, # ⬅️ допустимый параметр 
-      disable_package_automatic_updates: true
+      profile_name: ext_profile
     )
 
     # update_code_signing_settings(
@@ -169,7 +165,12 @@ platform :ios do
       export_options: {
         method: "app-store",
         provisioningProfiles: provisioning_profiles
-      }
+      },
+      skip_profile_detection: true,
+      skip_codesigning: false,
+      codesigning_identity: "Apple Distribution",
+      skip_package_dependencies_resolution: true, # ⬅️ допустимый параметр 
+      disable_package_automatic_updates: true
     }
 
     if workspace_path
