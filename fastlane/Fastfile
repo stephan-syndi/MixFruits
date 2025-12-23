@@ -321,9 +321,13 @@ platform :ios do
       output_directory: ipa_output_dir,
       export_options: {
         method: "app-store",
-        provisioningProfiles: provisioning_profiles
+        provisioningProfiles: {
+          main_bundle => "AppStore_#{main_bundle}", 
+          "#{main_bundle}.notifications" => "AppStore_#{main_bundle}.notifications"
+        }
       },
       skip_profile_detection: true,
+      skip_package_product_signing: true,
       skip_codesigning: false,
       codesigning_identity: "Apple Distribution"
     }
