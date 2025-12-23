@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,14 +63,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		412402182EF9750F0062A8F4 /* Exceptions for "MixFruits" folder in "MixFruits" target */ = {
+		412402182EF9750F0062A8F4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 4136EF7E2ED99567003DB36E /* MixFruits */;
 		};
-		413CCE0F2EF94E1200B7478C /* Exceptions for "notifications" folder in "notifications" target */ = {
+		413CCE0F2EF94E1200B7478C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -80,22 +80,8 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4136EF812ED99567003DB36E /* MixFruits */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				412402182EF9750F0062A8F4 /* Exceptions for "MixFruits" folder in "MixFruits" target */,
-			);
-			path = MixFruits;
-			sourceTree = "<group>";
-		};
-		413CCE082EF94E1200B7478C /* notifications */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				413CCE0F2EF94E1200B7478C /* Exceptions for "notifications" folder in "notifications" target */,
-			);
-			path = notifications;
-			sourceTree = "<group>";
-		};
+		4136EF812ED99567003DB36E /* MixFruits */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (412402182EF9750F0062A8F4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = MixFruits; sourceTree = "<group>"; };
+		413CCE082EF94E1200B7478C /* notifications */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (413CCE0F2EF94E1200B7478C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = notifications; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +232,7 @@
 				};
 			};
 			buildConfigurationList = 4136EF7A2ED99567003DB36E /* Build configuration list for PBXProject "MixFruits" */;
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -258,7 +245,6 @@
 				41D6D6D22EE1E314004CD36B /* XCRemoteSwiftPackageReference "Swinject" */,
 				41C90DD12EF57B7A00CD1F24 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 4136EF802ED99567003DB36E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
