@@ -734,16 +734,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/supabase-community/supabase-swift";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.5.1;
+				kind = exactVersion;
+				version = 2.5.1;
 			};
 		};
 		41D6D6D22EE1E314004CD36B /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.10.0;
+				kind = exactVersion;
+				version = 2.10.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
