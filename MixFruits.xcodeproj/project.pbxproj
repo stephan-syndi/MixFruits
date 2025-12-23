@@ -640,7 +640,8 @@
 			baseConfigurationReference = A974FB3E46FC06367C95F750 /* Pods-notifications.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = notifications/notifications.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -677,7 +678,8 @@
 			baseConfigurationReference = 4CA39496A4BAA127CB2CDD03 /* Pods-notifications.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = notifications/notifications.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
