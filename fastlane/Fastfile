@@ -325,6 +325,8 @@ platform :ios do
       }
     }
 
+    UI.message("Provisioning profiles mapping: #{provisioning_profiles}")
+
     if workspace_path
       build_app(common.merge(workspace: workspace_path))
     else
