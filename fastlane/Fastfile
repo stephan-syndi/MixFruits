@@ -327,7 +327,8 @@ platform :ios do
         }
       },
       skip_profile_detection: true,
-      skip_package_product_signing: true,
+      skip_package_dependencies_resolution: true,
+      disable_package_automatic_updates = true,
       skip_codesigning: false,
       codesigning_identity: "Apple Distribution"
     }
