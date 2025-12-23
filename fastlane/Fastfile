@@ -112,21 +112,25 @@ platform :ios do
     update_code_signing_settings(
       use_automatic_signing: false,
       team_id: main_team_id,
+      targets: main_target,
       code_sign_identity: "Apple Distribution",
       path: project_or_workspace_path,
-      targets: main_target,
+      profile_name: main_profile,
+      bundle_identifier: main_bundle,
       build_configurations: ["Release"],
-      profile_name: main_profile
+      # profile_name: main_profile
     )
 
     update_code_signing_settings(
       use_automatic_signing: false,
       team_id: main_team_id,
+      targets: notif_target,
       code_sign_identity: "Apple Distribution",
       path: project_or_workspace_path,
-      targets: notif_target,
+      profile_name: ext_profile,
+      bundle_identifier: ext_bundle,
       build_configurations: ["Release"],
-      profile_name: ext_profile
+      # profile_name: ext_profile
     )
 
     # update_code_signing_settings(
@@ -160,7 +164,7 @@ platform :ios do
       scheme: scheme,
       export_method: "app-store",
       export_team_id: main_team_id,
-      xcargs: "DEVELOPMENT_TEAM=#{main_team_id} CODE_SIGN_IDENTITY='Apple Distribution'",
+      xcargs: "DEVELOPMENT_TEAM=#{main_team_id}",
       output_directory: ipa_output_dir,
       export_options: {
         method: "app-store",
