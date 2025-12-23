@@ -76,7 +76,7 @@ jobs:
         run: security find-identity -v -p codesigning
 
       - name: List provisioning profiles
-        run: ls -la ~/Library/MobileDevice/Provisioning\ Profiles || echo "No profiles"
+        run: ls -la ~/Library/Developer/Xcode/UserData/Provisioning\ Profiles || echo "No profiles" 
 
       # 👉 Теперь запускаем сборку
       - name: Build (нативный через Fastlane)
