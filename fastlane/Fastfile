@@ -268,7 +268,7 @@ platform :ios do
     UI.message "➡️ Using workspace: #{workspace_path}" if workspace_path
     UI.message "➡️ Using project:   #{project_path}"   if project_path
 
-    sh("ls -la ~/Library/MobileDevice/Provisioning\\ Profiles")
+    # sh("ls -la ~/Library/MobileDevice/Provisioning\\ Profiles")
 
 
     # === Автоинкремент CFBundleVersion ===
