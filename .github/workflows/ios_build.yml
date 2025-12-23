@@ -108,6 +108,7 @@ jobs:
           IOS_SCHEME:          ${{ secrets.IOS_SCHEME }}
           PROJECT_NAME:        ${{ secrets.PROJECT_NAME }}
           BUILD_NUMBER:        ${{ github.run_number }}
+          XCODE_WORKSPACE:     ${{ secrets.XCODE_WORKSPACE }}
           GIT_FULL_NAME:       ci-bot
           GIT_USER_EMAIL:      ci-bot@local
         run: |
