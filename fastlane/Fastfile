@@ -118,7 +118,6 @@ platform :ios do
       profile_name: main_profile,
       bundle_identifier: main_bundle,
       build_configurations: ["Release"],
-      # profile_name: main_profile
     )
 
     update_code_signing_settings(
@@ -130,28 +129,7 @@ platform :ios do
       profile_name: ext_profile,
       bundle_identifier: ext_bundle,
       build_configurations: ["Release"],
-      # profile_name: ext_profile
     )
-
-    # update_code_signing_settings(
-    #   use_automatic_signing: false,
-    #   team_id: main_team_id,
-    #   code_sign_identity: "Apple Distribution",
-    #   path: project_or_workspace_path,
-    #   bundle_identifier: main_bundle,
-    #   profile_name: main_profile,
-    #   build_configurations: ["Release"]
-    # )
-
-    # update_code_signing_settings(
-    #   use_automatic_signing: false,
-    #   team_id: main_team_id,
-    #   code_sign_identity: "Apple Distribution",
-    #   path: project_or_workspace_path,
-    #   bundle_identifier: ext_bundle,
-    #   profile_name: ext_profile,
-    #   build_configurations: ["Release"]
-    # )
 
 
     provisioning_profiles = {}
@@ -172,7 +150,6 @@ platform :ios do
       },
       skip_profile_detection: true,
       skip_codesigning: false,
-      codesigning_identity: "Apple Distribution",
       skip_package_dependencies_resolution: true, # ⬅️ допустимый параметр 
       disable_package_automatic_updates: true
     }
