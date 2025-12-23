@@ -2,4 +2,5 @@ source "https://rubygems.org"
 gem "fastlane"
 gem "xcode-install"
 gem 'fastlane-plugin-github_action', git: "https://github.com/joshdholtz/fastlane-plugin-github_action"
-gem 'cocoapods', '~> 1.15.2'
+gem "cocoapods", "~> 1.16.2" 
+gem "xcodeproj", ">= 1.28.0"

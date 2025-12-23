@@ -91,7 +91,7 @@ jobs:
           done 
 
       - name: Install CocoaPods dependencies
-        run: pod install --repo-update
+        run: pod install --repo-update --no-ansi --verbose
 
       # 👉 Теперь запускаем сборку
       - name: Build (нативный через Fastlane)
