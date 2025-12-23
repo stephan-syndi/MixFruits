@@ -322,7 +322,10 @@ platform :ios do
       export_options: {
         method: "app-store",
         provisioningProfiles: provisioning_profiles
-      }
+      },
+      skip_profile_detection: true,
+      skip_codesigning: false,
+      codesigning_identity: "Apple Distribution"
     }
 
     UI.message("Provisioning profiles mapping: #{provisioning_profiles}")
