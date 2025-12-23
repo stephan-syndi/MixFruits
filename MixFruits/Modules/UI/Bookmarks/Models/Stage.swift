@@ -22,4 +22,4 @@ struct RecipeDraft: Identifiable, Codable {
     var subtitle: String
     var stages: [Stage]
     var mainImageName: String? = nil
-}
+} 

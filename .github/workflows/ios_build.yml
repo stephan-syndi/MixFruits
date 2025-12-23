@@ -78,6 +78,15 @@ jobs:
       - name: List provisioning profiles
         run: ls -la ~/Library/Developer/Xcode/UserData/Provisioning\ Profiles || echo "No profiles" 
 
+      - name: Inspect provisioning profiles
+        run: |
+          for profile in ~/Library/Developer/Xcode/UserData/Provisioning\ Profiles/*.mobileprovision; do
+            echo "🔍 Checking $profile"
+            security cms -D -i "$profile" | grep -A2 application-identifier
+            security cms -D -i "$profile" | grep -A2 aps-environment || echo "No aps-environment entitlement"
+            echo "--------------------------------------"
+          done 
+
       # 👉 Теперь запускаем сборку
       - name: Build (нативный через Fastlane)
         env:
