@@ -2,7 +2,7 @@
 //  AppsFlyerLib.h
 //  AppsFlyerLib
 //
-//  AppsFlyer iOS SDK 6.12.2 (999)
+//  AppsFlyer iOS SDK 6.12.0 (125)
 //  Copyright (c) 2012-2023 AppsFlyer Ltd. All rights reserved.
 //
 
@@ -12,11 +12,6 @@
 #import <AppsFlyerLib/AppsFlyerShareInviteHelper.h>
 #import <AppsFlyerLib/AppsFlyerDeepLinkResult.h>
 #import <AppsFlyerLib/AppsFlyerDeepLink.h>
-#import <AppsFlyerLib/AFSDKPurchaseDetails.h>
-#import <AppsFlyerLib/AFSDKPurchaseType.h>
-#import <AppsFlyerLib/AFSDKValidateAndLogResult.h>
-#import <AppsFlyerLib/AFAdRevenueData.h>
-
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -130,8 +125,13 @@ NS_ASSUME_NONNULL_BEGIN
 #define AFEventParamPreferredNeighborhoods  @"af_preferred_neighborhoods" //array of string
 #define AFEventParamPreferredNumStops       @"af_preferred_num_stops"
 
+#define AFEventParamAdRevenueAdType              @"af_adrev_ad_type"
+#define AFEventParamAdRevenueNetworkName         @"af_adrev_network_name"
+#define AFEventParamAdRevenuePlacementId         @"af_adrev_placement_id"
+#define AFEventParamAdRevenueAdSize              @"af_adrev_ad_size"
+#define AFEventParamAdRevenueMediatedNetworkName @"af_adrev_mediated_network_name"
 
-@class AppsFlyerConsent;
+
 /// Mail hashing type
 typedef enum  {
     /// None
@@ -350,7 +350,7 @@ NS_SWIFT_NAME(waitForATTUserAuthorization(timeoutInterval:));
  [[AppsFlyerLib shared] setResolveDeepLinkURLs:@[@"domain.com", @"subdomain.domain.com"]];
  </pre>
  */
-@property(nonatomic, nullable, copy) NSArray<NSString *> *resolveDeepLinkURLs;
+@property(nonatomic, nullable) NSArray<NSString *> *resolveDeepLinkURLs;
 
 /**
  For advertisers who use vanity OneLinks.
@@ -361,12 +361,12 @@ NS_SWIFT_NAME(waitForATTUserAuthorization(timeoutInterval:));
  [[AppsFlyerLib shared] oneLinkCustomDomains:@[@"domain.com", @"subdomain.domain.com"]];
  </pre>
  */
-@property(nonatomic, nullable, copy) NSArray<NSString *> *oneLinkCustomDomains;
+@property(nonatomic, nullable) NSArray<NSString *> *oneLinkCustomDomains;
 
 /*
  * Set phone number for each `start` event. `phoneNumber` will be sent as SHA256 string
  */
-@property(nonatomic, nullable, copy) NSString *phoneNumber;
+@property(nonatomic, nullable) NSString *phoneNumber;
 
 - (NSString *)phoneNumber UNAVAILABLE_ATTRIBUTE;
 
@@ -389,7 +389,7 @@ NS_SWIFT_NAME(waitForATTUserAuthorization(timeoutInterval:));
  AppsFlyerLib.shared().currentDeviceLanguage("EN")
  </pre>
  */
-@property(nonatomic, nullable, copy) NSString *currentDeviceLanguage;
+@property(nonatomic, nullable) NSString *currentDeviceLanguage;
 
 /**
  Internal API. Please don't use.
@@ -489,40 +489,6 @@ NS_SWIFT_NAME(logEvent(name:values:completionHandler:));
                             success:(void (^ _Nullable)(NSDictionary * response))successBlock
                             failure:(void (^ _Nullable)(NSError * _Nullable error, id _Nullable reponse))failedBlock NS_AVAILABLE(10_7, 7_0);
 
-typedef void (^AFSDKValidateAndLogCompletion)(AFSDKValidateAndLogResult * _Nullable result);
-
-/**
- Validates and logs an in-app purchase using the updated VAL V2 flow.
-
- This method should be called after a successful transaction, typically from:
- - `paymentQueue:updatedTransactions:` in your `SKPaymentTransactionObserver` (StoreKit 1)
- - `transaction.listener` or `.finishTransaction()` or  `VerificationResult<SignedType>` in StoreKit 2 (iOS 15+)
-
- @param purchaseDetails a `AFSDKPurchaseDetails` object. Must include:
-    - `productId` (non-empty)
-    - `transactionId` (non-empty)
-    - `purchaseType` ( `.subscription`, `.oneTimePurchase`)
- 
- @param purchaseAdditionalDetails Optional metadata associated with the purchase
- (previously known as `extraEventValues`). This can include custom app-level context.
-
- @param completion Completion block with either a response dictionary or an NSError.
- On success: `response` contains a parsed result.
- On failure: `error` describes the reason (validation failure, networking issue...)
- */
-- (void)validateAndLogInAppPurchase:(AFSDKPurchaseDetails *)purchaseDetails
-          purchaseAdditionalDetails:(NSDictionary * _Nullable)purchaseAdditionalDetails
-                         completion:(void (^)(NSDictionary * _Nullable response, NSError * _Nullable error))completion
-NS_SWIFT_NAME(validateAndLogInAppPurchase(purchaseDetails:purchaseAdditionalDetails:completion:));
-
-/**
- An API to provide the data from the impression payload to AdRevenue.
- 
- @param adRevenueData object used to hold all mandatory parameters of AdRevenue event.
- @param additionalParameters non-mandatory dictionary which can include pre-defined keys (kAppsFlyerAdRevenueCountry, etc)
- */
-- (void)logAdRevenue:(AFAdRevenueData *)adRevenueData additionalParameters:(NSDictionary * _Nullable)additionalParameters;
-
 /**
  To log location for geo-fencing. Does the same as code below.
  
@@ -615,11 +581,6 @@ NS_SWIFT_NAME(validateAndLogInAppPurchase(purchaseDetails:purchaseAdditionalDeta
 - (void)remoteDebuggingCallWithData:(NSString *)data;
 
 /**
- This is for internal use.
- */
-- (void)remoteDebuggingCallV2WithData:(NSString *)dataAsString;
-
-/**
  Used to force the trigger `onAppOpenAttribution` delegate.
  Notice, re-engagement, session and launch won't be counted.
  Only for OneLink/UniversalLink/Deeplink resolving.
@@ -675,13 +636,13 @@ NS_SWIFT_NAME(validateAndLogInAppPurchase(purchaseDetails:purchaseAdditionalDeta
 /**
  API to set manually Facebook deferred app link
  */
-@property(nonatomic, nullable, copy) NSURL *facebookDeferredAppLink;
+@property(nonatomic, nullable) NSURL *facebookDeferredAppLink;
 
 /**
  Block an events from being shared with ad networks and other 3rd party integrations
  Must only include letters/digits or underscore, maximum length: 45
  */
-@property(nonatomic, nullable, copy) NSArray<NSString *> *sharingFilter DEPRECATED_MSG_ATTRIBUTE("starting SDK version 6.4.0, please use `setSharingFilterForPartners:`");
+@property(nonatomic, nullable) NSArray<NSString *> *sharingFilter DEPRECATED_MSG_ATTRIBUTE("starting SDK version 6.4.0, please use `setSharingFilterForPartners:`");
 
 @property(nonatomic) NSUInteger deepLinkTimeout;
 
@@ -701,35 +662,6 @@ NS_SWIFT_NAME(validateAndLogInAppPurchase(purchaseDetails:purchaseAdditionalDeta
  the sharing filter will be set for ALL partners.
  */
 - (void)setSharingFilterForPartners:(NSArray<NSString *> * _Nullable)sharingFilter;
-
-
-/**
-    Sets Custom Install Id - this overrides the default AppsFlyer Install ID.
-    Only effective if Info.plist has `AppsFlyerAllowCustomInstallId=YES`
-     * Must be called before calling set appsFlyerDevKey and appleAppID
-    @param customID the customId.
-    */
-- (void)setInstallId:(NSString *)customID;
-
-/**
-    Sets or updates the user consent data related to GDPR and DMA regulations for advertising and data usage
-    purposes within the application. This method must be invoked with the user's current consent status each
-    time the app starts or whenever there is a change in the user's consent preferences.
-    
-    Note that this method does not persist the consent data across app sessions; it only applies for the
-    duration of the current app session. If you wish to stop providing the consent data, you should
-    cease calling this method.
-     
-    @param consent an instance of AppsFlyerConsent that encapsulates the user's consent information.
-    */
-- (void)setConsentData:(AppsFlyerConsent *)consent;
-
-/**
-    Enable the SDK to collect and send TCF data
-     
-    @param shouldCollectConsentData indicates if the TCF data collection is enabled.
- */
-- (void)enableTCFDataCollection:(BOOL)shouldCollectConsentData;
 
 /**
  Validate if URL contains certain string and append quiery

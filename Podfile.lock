@@ -1,7 +1,8 @@
 PODS:
-  - AppsFlyerFramework (6.17.8):
-    - AppsFlyerFramework/Main (= 6.17.8)
-  - AppsFlyerFramework/Main (6.17.8)
+  - Alamofire (5.8.0)
+  - AppsFlyerFramework (6.12.0):
+    - AppsFlyerFramework/Main (= 6.12.0)
+  - AppsFlyerFramework/Main (6.12.0)
   - Firebase/Core (12.7.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (~> 12.7.0)
@@ -113,12 +114,14 @@ PODS:
   - PromisesObjC (2.4.0)
 
 DEPENDENCIES:
-  - AppsFlyerFramework
-  - Firebase/Core
-  - Firebase/Messaging
+  - Alamofire (= 5.8)
+  - AppsFlyerFramework (= 6.12)
+  - Firebase/Core (= 12.7.0)
+  - Firebase/Messaging (= 12.7.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - AppsFlyerFramework
     - Firebase
     - FirebaseAnalytics
@@ -134,7 +137,8 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
-  AppsFlyerFramework: 63577b60d6b9fcdab60135289979e7d1c9ec79b9
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  AppsFlyerFramework: 38431c0dd52c05f4bdbe34934ef004d586063b30
   Firebase: 2d19a10c9a2e48ac532a4303115d3fc9b2798396
   FirebaseAnalytics: e423129866107aeacf6010a280b9c9829f9ea50d
   FirebaseCore: c7b57863ce0859281a66d16ca36d665c45d332b5
@@ -148,6 +152,6 @@ SPEC CHECKSUMS:
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
 
-PODFILE CHECKSUM: 11b0e6c5e11cc0f780782cdfd6de756a4082b08d
+PODFILE CHECKSUM: eb48a9096aff3a3a93e51106da1162ddee73d527
 
 COCOAPODS: 1.16.2
