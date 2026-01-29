@@ -137,9 +137,12 @@ public class AppRouter : Foundation.ObservableObject {
     set
   }
   final public let configProvider: DarkCoreFramework.ConfigurationProvider
-  public init<V>(_ view: V, configProvider: DarkCoreFramework.ConfigurationProvider) where V : SwiftUICore.View
+  public init(configProvider: DarkCoreFramework.ConfigurationProvider)
   public func goToScreen(to screen: DarkCoreFramework.AppScreen)
   public func setData(data: [Swift.AnyHashable : Any])
+  public func setScreen<V>(screen: DarkCoreFramework.AppScreen, view: V) where V : SwiftUICore.View
+  public func setPermissionViewModel(_ viewModel: any DarkCoreFramework.PermissionProtocol)
+  public func getPermissionViewModel() -> any DarkCoreFramework.PermissionProtocol
   public func changeScreen() -> some SwiftUICore.View
   
   public func changeState(to screen: DarkCoreFramework.AppScreen) -> some SwiftUICore.View
@@ -252,6 +255,10 @@ public struct WebViewFactory {
   public typealias Body = @_opaqueReturnTypeOf("$s17DarkCoreFramework24InternetReachabilityViewV4bodyQrvp", 0) __
 }
 
+public protocol PermissionProtocol {
+  func onRequestNotificationPermission()
+  func onSkip()
+}
 @_Concurrency.MainActor @preconcurrency public struct PermissionView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(_ configProvider: DarkCoreFramework.ConfigurationProvider)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -260,7 +267,9 @@ public struct WebViewFactory {
   public typealias Body = @_opaqueReturnTypeOf("$s17DarkCoreFramework14PermissionViewV4bodyQrvp", 0) __
 }
 
-@_hasMissingDesignatedInitializers public class PermissionViewModel : Foundation.ObservableObject {
+@_hasMissingDesignatedInitializers public class PermissionViewModel : Foundation.ObservableObject, DarkCoreFramework.PermissionProtocol {
+  public func onRequestNotificationPermission()
+  public func onSkip()
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }

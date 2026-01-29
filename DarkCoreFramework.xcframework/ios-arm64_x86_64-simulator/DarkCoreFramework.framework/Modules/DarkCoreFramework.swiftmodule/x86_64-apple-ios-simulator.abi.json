@@ -2469,7 +2469,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(_:configProvider:)",
+            "printedName": "init(configProvider:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2479,22 +2479,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "ConfigurationProvider",
                 "printedName": "DarkCoreFramework.ConfigurationProvider",
                 "usr": "s:17DarkCoreFramework21ConfigurationProviderC"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17DarkCoreFramework9AppRouterC_14configProviderACx_AA013ConfigurationG0Ctc7SwiftUI4ViewRzlufc",
-            "mangledName": "$s17DarkCoreFramework9AppRouterC_14configProviderACx_AA013ConfigurationG0Ctc7SwiftUI4ViewRzlufc",
+            "usr": "s:17DarkCoreFramework9AppRouterC14configProviderAcA013ConfigurationG0C_tcfc",
+            "mangledName": "$s17DarkCoreFramework9AppRouterC14configProviderAcA013ConfigurationG0C_tcfc",
             "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<V where V : SwiftUI.View>",
             "declAttributes": [
               "AccessControl"
             ],
@@ -2562,6 +2555,88 @@
             "moduleName": "DarkCoreFramework",
             "declAttributes": [
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setScreen",
+            "printedName": "setScreen(screen:view:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppScreen",
+                "printedName": "DarkCoreFramework.AppScreen",
+                "usr": "s:17DarkCoreFramework9AppScreenO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework9AppRouterC9setScreen6screen4viewyAA0dG0O_xt7SwiftUI4ViewRzlF",
+            "mangledName": "$s17DarkCoreFramework9AppRouterC9setScreen6screen4viewyAA0dG0O_xt7SwiftUI4ViewRzlF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<V where V : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPermissionViewModel",
+            "printedName": "setPermissionViewModel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PermissionProtocol",
+                "printedName": "any DarkCoreFramework.PermissionProtocol",
+                "usr": "s:17DarkCoreFramework18PermissionProtocolP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework9AppRouterC22setPermissionViewModelyyAA0G8Protocol_pF",
+            "mangledName": "$s17DarkCoreFramework9AppRouterC22setPermissionViewModelyyAA0G8Protocol_pF",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPermissionViewModel",
+            "printedName": "getPermissionViewModel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PermissionProtocol",
+                "printedName": "any DarkCoreFramework.PermissionProtocol",
+                "usr": "s:17DarkCoreFramework18PermissionProtocolP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework9AppRouterC22getPermissionViewModelAA0G8Protocol_pyF",
+            "mangledName": "$s17DarkCoreFramework9AppRouterC22getPermissionViewModelAA0G8Protocol_pyF",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2635,7 +2710,8 @@
         "mangledName": "$s17DarkCoreFramework9AppRouterC",
         "moduleName": "DarkCoreFramework",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -6481,6 +6557,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -7147,6 +7230,88 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PermissionProtocol",
+        "printedName": "PermissionProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onRequestNotificationPermission",
+            "printedName": "onRequestNotificationPermission()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework18PermissionProtocolP021onRequestNotificationD0yyF",
+            "mangledName": "$s17DarkCoreFramework18PermissionProtocolP021onRequestNotificationD0yyF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PermissionProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.PermissionProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSkip",
+            "printedName": "onSkip()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework18PermissionProtocolP6onSkipyyF",
+            "mangledName": "$s17DarkCoreFramework18PermissionProtocolP6onSkipyyF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PermissionProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.PermissionProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17DarkCoreFramework18PermissionProtocolP",
+        "mangledName": "$s17DarkCoreFramework18PermissionProtocolP",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -7336,6 +7501,48 @@
         "kind": "TypeDecl",
         "name": "PermissionViewModel",
         "printedName": "PermissionViewModel",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onRequestNotificationPermission",
+            "printedName": "onRequestNotificationPermission()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework19PermissionViewModelC021onRequestNotificationD0yyF",
+            "mangledName": "$s17DarkCoreFramework19PermissionViewModelC021onRequestNotificationD0yyF",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSkip",
+            "printedName": "onSkip()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework19PermissionViewModelC6onSkipyyF",
+            "mangledName": "$s17DarkCoreFramework19PermissionViewModelC6onSkipyyF",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
         "declKind": "Class",
         "usr": "s:17DarkCoreFramework19PermissionViewModelC",
         "mangledName": "$s17DarkCoreFramework19PermissionViewModelC",
@@ -7380,6 +7587,13 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PermissionProtocol",
+            "printedName": "PermissionProtocol",
+            "usr": "s:17DarkCoreFramework18PermissionProtocolP",
+            "mangledName": "$s17DarkCoreFramework18PermissionProtocolP"
           }
         ]
       },
@@ -7732,6 +7946,13 @@
       "value": "\"DELETE\""
     },
     {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/AppRouter.swift",
+      "kind": "Dictionary",
+      "offset": 1368,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/AppsFlyerService.swift",
       "kind": "StringLiteral",
       "offset": 344,
@@ -7958,14 +8179,14 @@
     {
       "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/BrowserView\/View\/Coordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 234,
+      "offset": 276,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/BrowserView\/View\/Coordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 272,
+      "offset": 314,
       "length": 2,
       "value": "70"
     },

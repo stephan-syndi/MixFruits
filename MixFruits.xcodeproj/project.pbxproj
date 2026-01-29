@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		411F71C32F2914EB00966D23 /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411F71C12F2914E900966D23 /* DarkCoreFramework.xcframework */; };
-		411F71C42F2914EB00966D23 /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 411F71C12F2914E900966D23 /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		413CCE0E2EF94E1200B7478C /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 413CCE072EF94E1200B7478C /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		413CCE702EF94F8000B7478C /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCE6C2EF94F7900B7478C /* FirebaseCore.framework */; };
 		413CCEAC2EF94FA100B7478C /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAB2EF94FA100B7478C /* FirebaseMessaging.framework */; };
 		413CCEAF2EF94FBC00B7478C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */; };
 		413CCEBC2EF94FEB00B7478C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */; };
 		41C90DD32EF57B7A00CD1F24 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 41C90DD22EF57B7A00CD1F24 /* Storage */; };
+		41D439E12F2B8745006E94DA /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D439DF2F2B8740006E94DA /* DarkCoreFramework.xcframework */; };
+		41D439E22F2B8745006E94DA /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41D439DF2F2B8740006E94DA /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41D6D6D42EE1E314004CD36B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 41D6D6D32EE1E314004CD36B /* Swinject */; };
 		8BAF3AE59192C1C5A231C5F2 /* Pods_MixFruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E26CE0829483787D66FBF5 /* Pods_MixFruits.framework */; };
 		BDF4300A860C024D25896299 /* Pods_notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB295D4B1A7FF8081957AF0A /* Pods_notifications.framework */; };
@@ -48,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				411F71C42F2914EB00966D23 /* DarkCoreFramework.xcframework in Embed Frameworks */,
+				41D439E22F2B8745006E94DA /* DarkCoreFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +56,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		411F71C12F2914E900966D23 /* DarkCoreFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DarkCoreFramework.xcframework; sourceTree = "<group>"; };
 		4136EF7F2ED99567003DB36E /* MixFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413CCE072EF94E1200B7478C /* notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		413CCE6C2EF94F7900B7478C /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +64,7 @@
 		413CCEB02EF94FCB00B7478C /* AppsFlyerLib.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:6UQAD4B3U2:APPSFLYER LTD"; lastKnownFileType = wrapper.xcframework; name = AppsFlyerLib.xcframework; path = Pods/AppsFlyerFramework/binaries/xcframework/full/AppsFlyerLib.xcframework; sourceTree = "<group>"; };
 		413CCEB42EF94FD600B7478C /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		413CCEB82EF94FE000B7478C /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D439DF2F2B8740006E94DA /* DarkCoreFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DarkCoreFramework.xcframework; sourceTree = "<group>"; };
 		4CA39496A4BAA127CB2CDD03 /* Pods-notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.release.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.release.xcconfig"; sourceTree = "<group>"; };
 		A974FB3E46FC06367C95F750 /* Pods-notifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.debug.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.debug.xcconfig"; sourceTree = "<group>"; };
 		E6E26CE0829483787D66FBF5 /* Pods_MixFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,7 +118,7 @@
 				41D6D6D42EE1E314004CD36B /* Swinject in Frameworks */,
 				8BAF3AE59192C1C5A231C5F2 /* Pods_MixFruits.framework in Frameworks */,
 				413CCEBC2EF94FEB00B7478C /* UserNotifications.framework in Frameworks */,
-				411F71C32F2914EB00966D23 /* DarkCoreFramework.xcframework in Frameworks */,
+				41D439E12F2B8745006E94DA /* DarkCoreFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +144,7 @@
 				4136EF802ED99567003DB36E /* Products */,
 				EA10536239F1EE4B3437EB9F /* Pods */,
 				9969480C5D28ADD59DD6740B /* Frameworks */,
-				411F71C12F2914E900966D23 /* DarkCoreFramework.xcframework */,
+				41D439DF2F2B8740006E94DA /* DarkCoreFramework.xcframework */,
 			);
 			sourceTree = "<group>";
 		};
