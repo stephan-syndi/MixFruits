@@ -10,8 +10,6 @@
 		413CCE0E2EF94E1200B7478C /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 413CCE072EF94E1200B7478C /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		413CCEAF2EF94FBC00B7478C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */; };
 		413CCEBC2EF94FEB00B7478C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */; };
-		419CAEE72F2BB08B003B5A7C /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419CAEE42F2BB087003B5A7C /* DarkCoreFramework.xcframework */; };
-		419CAEE82F2BB08B003B5A7C /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419CAEE42F2BB087003B5A7C /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		419CAEE92F2BB090003B5A7C /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419CAEE42F2BB087003B5A7C /* DarkCoreFramework.xcframework */; };
 		419CAEEA2F2BB090003B5A7C /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419CAEE42F2BB087003B5A7C /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41C90DD32EF57B7A00CD1F24 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 41C90DD22EF57B7A00CD1F24 /* Storage */; };
@@ -49,17 +47,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				419CAEEA2F2BB090003B5A7C /* DarkCoreFramework.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		41D43A4E2F2B8EE6006E94DA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				419CAEE82F2BB08B003B5A7C /* DarkCoreFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +126,6 @@
 			files = (
 				413CCEAF2EF94FBC00B7478C /* UserNotifications.framework in Frameworks */,
 				BDF4300A860C024D25896299 /* Pods_notifications.framework in Frameworks */,
-				419CAEE72F2BB08B003B5A7C /* DarkCoreFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +219,6 @@
 				413CCE032EF94E1200B7478C /* Sources */,
 				413CCE042EF94E1200B7478C /* Frameworks */,
 				413CCE052EF94E1200B7478C /* Resources */,
-				41D43A4E2F2B8EE6006E94DA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
