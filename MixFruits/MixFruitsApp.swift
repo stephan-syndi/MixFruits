@@ -53,6 +53,10 @@ struct MixFruitsApp: App {
         router.setScreen(screen: .permission, view: PermissionView(viewModel: router.getPermissionViewModel()))
         router.setScreen(screen: .internet, view: InternetAlertView())
         appDelegate.router = router
+        
+        UNUserNotificationCenter.current().delegate = appDelegate
+    
+        UIApplication.shared.registerForRemoteNotifications()
     }
 
     var body: some Scene {
