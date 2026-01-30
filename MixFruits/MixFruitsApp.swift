@@ -17,7 +17,8 @@ struct MixFruitsApp: App {
     let config = Configuration(
         appsDevKey: "7N9GPhHowZLgGHEPPu5feg",
         appleAppId: "6756780702",
-        backIsImage: true
+        backIsImage: true,
+        firebaseGCMSenderId: "461860857468"
     )
 
     private let router: AppRouter
@@ -47,16 +48,15 @@ struct MixFruitsApp: App {
         print("👉 init MyApp")
         let libraryVM = container.resolve(LibraryViewModel.self)
         let bookmarkVM = container.resolve(BookmarkViewModel.self)
+     
         router = DarkCore.configure(config: config, clearView: ContentView(libraryVM: libraryVM, bookmarkVM: bookmarkVM))
+        
         router.setScreen(screen: .clear, view: ContentView(libraryVM: libraryVM, bookmarkVM: bookmarkVM))
         router.setScreen(screen: .curtain, view: CurtainView())
         router.setScreen(screen: .permission, view: PermissionView(viewModel: router.getPermissionViewModel()))
         router.setScreen(screen: .internet, view: InternetAlertView())
-        appDelegate.router = router
         
-        UNUserNotificationCenter.current().delegate = appDelegate
-    
-        UIApplication.shared.registerForRemoteNotifications()
+        appDelegate.router = router
     }
 
     var body: some Scene {
