@@ -14,6 +14,8 @@
 		419CAEEA2F2BB090003B5A7C /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419CAEE42F2BB087003B5A7C /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41C90DD32EF57B7A00CD1F24 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 41C90DD22EF57B7A00CD1F24 /* Storage */; };
 		41D6D6D42EE1E314004CD36B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 41D6D6D32EE1E314004CD36B /* Swinject */; };
+		41DD42FA2F2C9F0100CD17F8 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DD42F92F2C9F0100CD17F8 /* FirebaseCore.framework */; };
+		41DD42FE2F2C9F0A00CD17F8 /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DD42FD2F2C9F0A00CD17F8 /* FirebaseMessaging.framework */; };
 		8BAF3AE59192C1C5A231C5F2 /* Pods_MixFruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E26CE0829483787D66FBF5 /* Pods_MixFruits.framework */; };
 		BDF4300A860C024D25896299 /* Pods_notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB295D4B1A7FF8081957AF0A /* Pods_notifications.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		413CCEB42EF94FD600B7478C /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		413CCEB82EF94FE000B7478C /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		419CAEE42F2BB087003B5A7C /* DarkCoreFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DarkCoreFramework.xcframework; sourceTree = "<group>"; };
+		41DD42F92F2C9F0100CD17F8 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41DD42FD2F2C9F0A00CD17F8 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA39496A4BAA127CB2CDD03 /* Pods-notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.release.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.release.xcconfig"; sourceTree = "<group>"; };
 		A974FB3E46FC06367C95F750 /* Pods-notifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.debug.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.debug.xcconfig"; sourceTree = "<group>"; };
 		E6E26CE0829483787D66FBF5 /* Pods_MixFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +130,8 @@
 			files = (
 				413CCEAF2EF94FBC00B7478C /* UserNotifications.framework in Frameworks */,
 				BDF4300A860C024D25896299 /* Pods_notifications.framework in Frameworks */,
+				41DD42FE2F2C9F0A00CD17F8 /* FirebaseMessaging.framework in Frameworks */,
+				41DD42FA2F2C9F0100CD17F8 /* FirebaseCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +162,8 @@
 		9969480C5D28ADD59DD6740B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41DD42FD2F2C9F0A00CD17F8 /* FirebaseMessaging.framework */,
+				41DD42F92F2C9F0100CD17F8 /* FirebaseCore.framework */,
 				413CCEB82EF94FE000B7478C /* FirebaseMessaging.framework */,
 				413CCEB42EF94FD600B7478C /* FirebaseCore.framework */,
 				413CCEB02EF94FCB00B7478C /* AppsFlyerLib.xcframework */,
