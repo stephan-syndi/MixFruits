@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412B55282F2D08EB00FF2BA5 /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412B55262F2D08E600FF2BA5 /* DarkCoreFramework.xcframework */; };
+		412B55292F2D08EB00FF2BA5 /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 412B55262F2D08E600FF2BA5 /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		413CCE0E2EF94E1200B7478C /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 413CCE072EF94E1200B7478C /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		413CCEAF2EF94FBC00B7478C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */; };
 		413CCEBC2EF94FEB00B7478C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */; };
@@ -14,8 +16,6 @@
 		41D6D6D42EE1E314004CD36B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 41D6D6D32EE1E314004CD36B /* Swinject */; };
 		41DD42FA2F2C9F0100CD17F8 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DD42F92F2C9F0100CD17F8 /* FirebaseCore.framework */; };
 		41DD42FE2F2C9F0A00CD17F8 /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DD42FD2F2C9F0A00CD17F8 /* FirebaseMessaging.framework */; };
-		41DD430E2F2CE2B400CD17F8 /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DD430C2F2CE2B200CD17F8 /* DarkCoreFramework.xcframework */; };
-		41DD430F2F2CE2B400CD17F8 /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41DD430C2F2CE2B200CD17F8 /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8BAF3AE59192C1C5A231C5F2 /* Pods_MixFruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E26CE0829483787D66FBF5 /* Pods_MixFruits.framework */; };
 		BDF4300A860C024D25896299 /* Pods_notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB295D4B1A7FF8081957AF0A /* Pods_notifications.framework */; };
 /* End PBXBuildFile section */
@@ -48,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				41DD430F2F2CE2B400CD17F8 /* DarkCoreFramework.xcframework in Embed Frameworks */,
+				412B55292F2D08EB00FF2BA5 /* DarkCoreFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		412B55262F2D08E600FF2BA5 /* DarkCoreFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DarkCoreFramework.xcframework; sourceTree = "<group>"; };
 		4136EF7F2ED99567003DB36E /* MixFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413CCE072EF94E1200B7478C /* notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		413CCE6C2EF94F7900B7478C /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +67,6 @@
 		413CCEB82EF94FE000B7478C /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DD42F92F2C9F0100CD17F8 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DD42FD2F2C9F0A00CD17F8 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41DD430C2F2CE2B200CD17F8 /* DarkCoreFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DarkCoreFramework.xcframework; sourceTree = "<group>"; };
 		4CA39496A4BAA127CB2CDD03 /* Pods-notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.release.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.release.xcconfig"; sourceTree = "<group>"; };
 		A974FB3E46FC06367C95F750 /* Pods-notifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifications.debug.xcconfig"; path = "Target Support Files/Pods-notifications/Pods-notifications.debug.xcconfig"; sourceTree = "<group>"; };
 		E6E26CE0829483787D66FBF5 /* Pods_MixFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,7 +120,7 @@
 				41D6D6D42EE1E314004CD36B /* Swinject in Frameworks */,
 				8BAF3AE59192C1C5A231C5F2 /* Pods_MixFruits.framework in Frameworks */,
 				413CCEBC2EF94FEB00B7478C /* UserNotifications.framework in Frameworks */,
-				41DD430E2F2CE2B400CD17F8 /* DarkCoreFramework.xcframework in Frameworks */,
+				412B55282F2D08EB00FF2BA5 /* DarkCoreFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +146,7 @@
 				4136EF802ED99567003DB36E /* Products */,
 				EA10536239F1EE4B3437EB9F /* Pods */,
 				9969480C5D28ADD59DD6740B /* Frameworks */,
-				41DD430C2F2CE2B200CD17F8 /* DarkCoreFramework.xcframework */,
+				412B55262F2D08E600FF2BA5 /* DarkCoreFramework.xcframework */,
 			);
 			sourceTree = "<group>";
 		};

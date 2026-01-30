@@ -63,9 +63,9 @@ struct MixFruitsApp: App {
         WindowGroup {
             MainContentView()
                 .environmentObject(router)
-                .onAppear{
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { requestTrackingPermission() }
-                }
+//                .onAppear{
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { requestTrackingPermission() }
+//                }
         }
     }
     
