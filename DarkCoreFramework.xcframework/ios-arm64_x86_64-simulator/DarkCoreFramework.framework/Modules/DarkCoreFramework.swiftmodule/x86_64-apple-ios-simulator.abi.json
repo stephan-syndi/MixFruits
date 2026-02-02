@@ -6,449 +6,6 @@
     "children": [
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AnalyticsServiceProtocol",
-        "printedName": "AnalyticsServiceProtocol",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "configure",
-            "printedName": "configure(devKey:appId:delegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP9configure6devKey5appId8delegateySS_SSypSgtF",
-            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP9configure6devKey5appId8delegateySS_SSypSgtF",
-            "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP5startyyF",
-            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP5startyyF",
-            "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getUID",
-            "printedName": "getUID()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP6getUIDSSyF",
-            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP6getUIDSSyF",
-            "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setDeepLinkDelegate",
-            "printedName": "setDeepLinkDelegate(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP19setDeepLinkDelegateyyypSgF",
-            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP19setDeepLinkDelegateyyypSgF",
-            "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "handleForegroundNotification",
-            "printedName": "handleForegroundNotification(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP28handleForegroundNotificationyyypF",
-            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP28handleForegroundNotificationyyypF",
-            "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "handleNotificationResponse",
-            "printedName": "handleNotificationResponse(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.AnyHashable : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AnyHashable",
-                    "printedName": "Swift.AnyHashable",
-                    "usr": "s:s11AnyHashableV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP26handleNotificationResponseyySDys11AnyHashableVypGF",
-            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP26handleNotificationResponseyySDys11AnyHashableVypGF",
-            "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP",
-        "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AlamofireNetworkService",
-        "printedName": "AlamofireNetworkService",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AlamofireNetworkService",
-                "printedName": "DarkCoreFramework.AlamofireNetworkService",
-                "usr": "s:17DarkCoreFramework23AlamofireNetworkServiceC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17DarkCoreFramework23AlamofireNetworkServiceCACycfc",
-            "mangledName": "$s17DarkCoreFramework23AlamofireNetworkServiceCACycfc",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "request",
-            "printedName": "request(url:method:parameters:headers:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HTTPMethod",
-                "printedName": "DarkCoreFramework.HTTPMethod",
-                "usr": "s:17DarkCoreFramework10HTTPMethodO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Foundation.Data, any Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Foundation.Data, any Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Data",
-                        "printedName": "Foundation.Data",
-                        "usr": "s:10Foundation4DataV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework23AlamofireNetworkServiceC7request3url6method10parameters7headers10completionySS_AA10HTTPMethodOSDySSypGSgSDyS2SGSgys6ResultOy10Foundation4DataVs5Error_pGctF",
-            "mangledName": "$s17DarkCoreFramework23AlamofireNetworkServiceC7request3url6method10parameters7headers10completionySS_AA10HTTPMethodOSDySSypGSgSDyS2SGSgys6ResultOy10Foundation4DataVs5Error_pGctF",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:17DarkCoreFramework23AlamofireNetworkServiceC",
-        "mangledName": "$s17DarkCoreFramework23AlamofireNetworkServiceC",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "NetworkServiceProtocol",
-            "printedName": "NetworkServiceProtocol",
-            "usr": "s:17DarkCoreFramework22NetworkServiceProtocolP",
-            "mangledName": "$s17DarkCoreFramework22NetworkServiceProtocolP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2667,6 +2224,220 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "System",
+        "printedName": "System",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InternetReachabilityView",
+        "printedName": "InternetReachabilityView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configProvider:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InternetReachabilityView",
+                "printedName": "DarkCoreFramework.InternetReachabilityView",
+                "usr": "s:17DarkCoreFramework24InternetReachabilityViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConfigurationProvider",
+                "printedName": "DarkCoreFramework.ConfigurationProvider",
+                "usr": "s:17DarkCoreFramework21ConfigurationProviderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17DarkCoreFramework24InternetReachabilityViewV14configProviderAcA013ConfigurationH0C_tcfc",
+            "mangledName": "$s17DarkCoreFramework24InternetReachabilityViewV14configProviderAcA013ConfigurationH0C_tcfc",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17DarkCoreFramework24InternetReachabilityViewV4bodyQrvp",
+            "mangledName": "$s17DarkCoreFramework24InternetReachabilityViewV4bodyQrvp",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17DarkCoreFramework24InternetReachabilityViewV4bodyQrvg",
+                "mangledName": "$s17DarkCoreFramework24InternetReachabilityViewV4bodyQrvg",
+                "moduleName": "DarkCoreFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17DarkCoreFramework24InternetReachabilityViewV",
+        "mangledName": "$s17DarkCoreFramework24InternetReachabilityViewV",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2677,17 +2448,509 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "DarkCoreFramework"
       },
       {
         "kind": "Import",
-        "name": "UserNotifications",
-        "printedName": "UserNotifications",
+        "name": "WebKit",
+        "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BrowserManager",
+        "printedName": "BrowserManager",
+        "declKind": "Class",
+        "usr": "s:17DarkCoreFramework14BrowserManagerC",
+        "mangledName": "$s17DarkCoreFramework14BrowserManagerC",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PermissionView",
+        "printedName": "PermissionView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PermissionView",
+                "printedName": "DarkCoreFramework.PermissionView",
+                "usr": "s:17DarkCoreFramework14PermissionViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConfigurationProvider",
+                "printedName": "DarkCoreFramework.ConfigurationProvider",
+                "usr": "s:17DarkCoreFramework21ConfigurationProviderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17DarkCoreFramework14PermissionViewVyAcA21ConfigurationProviderCcfc",
+            "mangledName": "$s17DarkCoreFramework14PermissionViewVyAcA21ConfigurationProviderCcfc",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17DarkCoreFramework14PermissionViewV4bodyQrvp",
+            "mangledName": "$s17DarkCoreFramework14PermissionViewV4bodyQrvp",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17DarkCoreFramework14PermissionViewV4bodyQrvg",
+                "mangledName": "$s17DarkCoreFramework14PermissionViewV4bodyQrvg",
+                "moduleName": "DarkCoreFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17DarkCoreFramework14PermissionViewV",
+        "mangledName": "$s17DarkCoreFramework14PermissionViewV",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppsFlyerLib",
+        "printedName": "AppsFlyerLib",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppsFlyerAnalyticsService",
+        "printedName": "AppsFlyerAnalyticsService",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppsFlyerAnalyticsService",
+                "printedName": "DarkCoreFramework.AppsFlyerAnalyticsService",
+                "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceCACycfc",
+            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceCACycfc",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(devKey:appId:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC9configure6devKey5appId8delegateySS_SSypSgtF",
+            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC9configure6devKey5appId8delegateySS_SSypSgtF",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC5startyyF",
+            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC5startyyF",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUID",
+            "printedName": "getUID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC6getUIDSSyF",
+            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC6getUIDSSyF",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDeepLinkDelegate",
+            "printedName": "setDeepLinkDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC19setDeepLinkDelegateyyypSgF",
+            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC19setDeepLinkDelegateyyypSgF",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleForegroundNotification",
+            "printedName": "handleForegroundNotification(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC28handleForegroundNotificationyyypF",
+            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC28handleForegroundNotificationyyypF",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleNotificationResponse",
+            "printedName": "handleNotificationResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC26handleNotificationResponseyySDys11AnyHashableVypGF",
+            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC26handleNotificationResponseyySDys11AnyHashableVypGF",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC",
+        "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnalyticsServiceProtocol",
+            "printedName": "AnalyticsServiceProtocol",
+            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP",
+            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -3195,509 +3458,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PermissionViewModel",
-        "printedName": "PermissionViewModel",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onRequestNotificationPermission",
-            "printedName": "onRequestNotificationPermission()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework19PermissionViewModelC021onRequestNotificationD0yyF",
-            "mangledName": "$s17DarkCoreFramework19PermissionViewModelC021onRequestNotificationD0yyF",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onSkip",
-            "printedName": "onSkip()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework19PermissionViewModelC6onSkipyyF",
-            "mangledName": "$s17DarkCoreFramework19PermissionViewModelC6onSkipyyF",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:17DarkCoreFramework19PermissionViewModelC",
-        "mangledName": "$s17DarkCoreFramework19PermissionViewModelC",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ObservableObject",
-            "printedName": "ObservableObject",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ObjectWillChangePublisher",
-                "printedName": "ObjectWillChangePublisher",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObservableObjectPublisher",
-                    "printedName": "Combine.ObservableObjectPublisher",
-                    "usr": "s:7Combine25ObservableObjectPublisherC"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7Combine16ObservableObjectP",
-            "mangledName": "$s7Combine16ObservableObjectP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "PermissionProtocol",
-            "printedName": "PermissionProtocol",
-            "usr": "s:17DarkCoreFramework18PermissionProtocolP",
-            "mangledName": "$s17DarkCoreFramework18PermissionProtocolP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AppsFlyerLib",
-        "printedName": "AppsFlyerLib",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CurtainView",
-        "printedName": "CurtainView",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(configProvider:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CurtainView",
-                "printedName": "DarkCoreFramework.CurtainView",
-                "usr": "s:17DarkCoreFramework11CurtainViewV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ConfigurationProvider",
-                "printedName": "DarkCoreFramework.ConfigurationProvider",
-                "usr": "s:17DarkCoreFramework21ConfigurationProviderC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17DarkCoreFramework11CurtainViewV14configProviderAcA013ConfigurationG0C_tcfc",
-            "mangledName": "$s17DarkCoreFramework11CurtainViewV14configProviderAcA013ConfigurationG0C_tcfc",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17DarkCoreFramework11CurtainViewV4bodyQrvp",
-            "mangledName": "$s17DarkCoreFramework11CurtainViewV4bodyQrvp",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17DarkCoreFramework11CurtainViewV4bodyQrvg",
-                "mangledName": "$s17DarkCoreFramework11CurtainViewV4bodyQrvg",
-                "moduleName": "DarkCoreFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:17DarkCoreFramework11CurtainViewV",
-        "mangledName": "$s17DarkCoreFramework11CurtainViewV",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BrowserManager",
-        "printedName": "BrowserManager",
-        "declKind": "Class",
-        "usr": "s:17DarkCoreFramework14BrowserManagerC",
-        "mangledName": "$s17DarkCoreFramework14BrowserManagerC",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ObservableObject",
-            "printedName": "ObservableObject",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ObjectWillChangePublisher",
-                "printedName": "ObjectWillChangePublisher",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObservableObjectPublisher",
-                    "printedName": "Combine.ObservableObjectPublisher",
-                    "usr": "s:7Combine25ObservableObjectPublisherC"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7Combine16ObservableObjectP",
-            "mangledName": "$s7Combine16ObservableObjectP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ImageHelper",
-        "printedName": "ImageHelper",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "safeImage",
-            "printedName": "safeImage(_:fallbackColor:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Image",
-                "printedName": "SwiftUI.Image",
-                "usr": "s:7SwiftUI5ImageV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Color",
-                "printedName": "SwiftUI.Color",
-                "hasDefaultArg": true,
-                "usr": "s:7SwiftUI5ColorV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework11ImageHelperO04safeD0_13fallbackColor7SwiftUI0D0VSS_AF0H0VtFZ",
-            "mangledName": "$s17DarkCoreFramework11ImageHelperO04safeD0_13fallbackColor7SwiftUI0D0VSS_AF0H0VtFZ",
-            "moduleName": "DarkCoreFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:17DarkCoreFramework11ImageHelperO",
-        "mangledName": "$s17DarkCoreFramework11ImageHelperO",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
@@ -3967,6 +3727,200 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CurtainView",
+        "printedName": "CurtainView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configProvider:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CurtainView",
+                "printedName": "DarkCoreFramework.CurtainView",
+                "usr": "s:17DarkCoreFramework11CurtainViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConfigurationProvider",
+                "printedName": "DarkCoreFramework.ConfigurationProvider",
+                "usr": "s:17DarkCoreFramework21ConfigurationProviderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17DarkCoreFramework11CurtainViewV14configProviderAcA013ConfigurationG0C_tcfc",
+            "mangledName": "$s17DarkCoreFramework11CurtainViewV14configProviderAcA013ConfigurationG0C_tcfc",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17DarkCoreFramework11CurtainViewV4bodyQrvp",
+            "mangledName": "$s17DarkCoreFramework11CurtainViewV4bodyQrvp",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17DarkCoreFramework11CurtainViewV4bodyQrvg",
+                "mangledName": "$s17DarkCoreFramework11CurtainViewV4bodyQrvg",
+                "moduleName": "DarkCoreFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17DarkCoreFramework11CurtainViewV",
+        "mangledName": "$s17DarkCoreFramework11CurtainViewV",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -4160,18 +4114,221 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
+        "kind": "TypeDecl",
+        "name": "PushNotificationServiceProtocol",
+        "printedName": "PushNotificationServiceProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP9configureyyF",
+            "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP9configureyyF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PushNotificationServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.PushNotificationServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAPNSToken",
+            "printedName": "setAPNSToken(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP12setAPNSTokenyy10Foundation4DataVF",
+            "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP12setAPNSTokenyy10Foundation4DataVF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PushNotificationServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.PushNotificationServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP8getToken10completionyySSSgc_tF",
+            "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP8getToken10completionyySSSgc_tF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PushNotificationServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.PushNotificationServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP11setDelegateyyypSgF",
+            "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP11setDelegateyyypSgF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PushNotificationServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.PushNotificationServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "currentToken",
+            "printedName": "currentToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP12currentTokenSSSgvp",
+            "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP12currentTokenSSSgvp",
+            "moduleName": "DarkCoreFramework",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP12currentTokenSSSgvg",
+                "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP12currentTokenSSSgvg",
+                "moduleName": "DarkCoreFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PushNotificationServiceProtocol>",
+                "sugared_genericSig": "<Self where Self : DarkCoreFramework.PushNotificationServiceProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP",
+        "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -4185,300 +4342,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "HTTPMethod",
-        "printedName": "HTTPMethod",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "get",
-            "printedName": "get",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DarkCoreFramework.HTTPMethod.Type) -> DarkCoreFramework.HTTPMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPMethod",
-                    "printedName": "DarkCoreFramework.HTTPMethod",
-                    "usr": "s:17DarkCoreFramework10HTTPMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DarkCoreFramework.HTTPMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "HTTPMethod",
-                        "printedName": "DarkCoreFramework.HTTPMethod",
-                        "usr": "s:17DarkCoreFramework10HTTPMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:17DarkCoreFramework10HTTPMethodO3getyA2CmF",
-            "mangledName": "$s17DarkCoreFramework10HTTPMethodO3getyA2CmF",
-            "moduleName": "DarkCoreFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "post",
-            "printedName": "post",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DarkCoreFramework.HTTPMethod.Type) -> DarkCoreFramework.HTTPMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPMethod",
-                    "printedName": "DarkCoreFramework.HTTPMethod",
-                    "usr": "s:17DarkCoreFramework10HTTPMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DarkCoreFramework.HTTPMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "HTTPMethod",
-                        "printedName": "DarkCoreFramework.HTTPMethod",
-                        "usr": "s:17DarkCoreFramework10HTTPMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:17DarkCoreFramework10HTTPMethodO4postyA2CmF",
-            "mangledName": "$s17DarkCoreFramework10HTTPMethodO4postyA2CmF",
-            "moduleName": "DarkCoreFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "put",
-            "printedName": "put",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DarkCoreFramework.HTTPMethod.Type) -> DarkCoreFramework.HTTPMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPMethod",
-                    "printedName": "DarkCoreFramework.HTTPMethod",
-                    "usr": "s:17DarkCoreFramework10HTTPMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DarkCoreFramework.HTTPMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "HTTPMethod",
-                        "printedName": "DarkCoreFramework.HTTPMethod",
-                        "usr": "s:17DarkCoreFramework10HTTPMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:17DarkCoreFramework10HTTPMethodO3putyA2CmF",
-            "mangledName": "$s17DarkCoreFramework10HTTPMethodO3putyA2CmF",
-            "moduleName": "DarkCoreFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "delete",
-            "printedName": "delete",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DarkCoreFramework.HTTPMethod.Type) -> DarkCoreFramework.HTTPMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPMethod",
-                    "printedName": "DarkCoreFramework.HTTPMethod",
-                    "usr": "s:17DarkCoreFramework10HTTPMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DarkCoreFramework.HTTPMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "HTTPMethod",
-                        "printedName": "DarkCoreFramework.HTTPMethod",
-                        "usr": "s:17DarkCoreFramework10HTTPMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:17DarkCoreFramework10HTTPMethodO6deleteyA2CmF",
-            "mangledName": "$s17DarkCoreFramework10HTTPMethodO6deleteyA2CmF",
-            "moduleName": "DarkCoreFramework"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "DarkCoreFramework.HTTPMethod?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPMethod",
-                    "printedName": "DarkCoreFramework.HTTPMethod",
-                    "usr": "s:17DarkCoreFramework10HTTPMethodO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17DarkCoreFramework10HTTPMethodO8rawValueACSgSS_tcfc",
-            "mangledName": "$s17DarkCoreFramework10HTTPMethodO8rawValueACSgSS_tcfc",
-            "moduleName": "DarkCoreFramework",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17DarkCoreFramework10HTTPMethodO8rawValueSSvp",
-            "mangledName": "$s17DarkCoreFramework10HTTPMethodO8rawValueSSvp",
-            "moduleName": "DarkCoreFramework",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17DarkCoreFramework10HTTPMethodO8rawValueSSvg",
-                "mangledName": "$s17DarkCoreFramework10HTTPMethodO8rawValueSSvg",
-                "moduleName": "DarkCoreFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:17DarkCoreFramework10HTTPMethodO",
-        "mangledName": "$s17DarkCoreFramework10HTTPMethodO",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NetworkServiceProtocol",
-        "printedName": "NetworkServiceProtocol",
+        "name": "AnalyticsServiceProtocol",
+        "printedName": "AnalyticsServiceProtocol",
         "children": [
           {
             "kind": "Function",
-            "name": "request",
-            "printedName": "request(url:method:parameters:headers:completion:)",
+            "name": "configure",
+            "printedName": "configure(devKey:appId:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4493,112 +4363,181 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "HTTPMethod",
-                "printedName": "DarkCoreFramework.HTTPMethod",
-                "usr": "s:17DarkCoreFramework10HTTPMethodO"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "Any?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
                   }
                 ],
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<Foundation.Data, any Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Foundation.Data, any Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Data",
-                        "printedName": "Foundation.Data",
-                        "usr": "s:10Foundation4DataV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:17DarkCoreFramework22NetworkServiceProtocolP7request3url6method10parameters7headers10completionySS_AA10HTTPMethodOSDySSypGSgSDyS2SGSgys6ResultOy10Foundation4DataVs5Error_pGctF",
-            "mangledName": "$s17DarkCoreFramework22NetworkServiceProtocolP7request3url6method10parameters7headers10completionySS_AA10HTTPMethodOSDySSypGSgSDyS2SGSgys6ResultOy10Foundation4DataVs5Error_pGctF",
+            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP9configure6devKey5appId8delegateySS_SSypSgtF",
+            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP9configure6devKey5appId8delegateySS_SSypSgtF",
             "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.NetworkServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : DarkCoreFramework.NetworkServiceProtocol>",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP5startyyF",
+            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP5startyyF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUID",
+            "printedName": "getUID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP6getUIDSSyF",
+            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP6getUIDSSyF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDeepLinkDelegate",
+            "printedName": "setDeepLinkDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP19setDeepLinkDelegateyyypSgF",
+            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP19setDeepLinkDelegateyyypSgF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleForegroundNotification",
+            "printedName": "handleForegroundNotification(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP28handleForegroundNotificationyyypF",
+            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP28handleForegroundNotificationyyypF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleNotificationResponse",
+            "printedName": "handleNotificationResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP26handleNotificationResponseyySDys11AnyHashableVypGF",
+            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP26handleNotificationResponseyySDys11AnyHashableVypGF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.AnalyticsServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.AnalyticsServiceProtocol>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:17DarkCoreFramework22NetworkServiceProtocolP",
-        "mangledName": "$s17DarkCoreFramework22NetworkServiceProtocolP",
+        "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP",
+        "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP",
         "moduleName": "DarkCoreFramework",
         "declAttributes": [
           "AccessControl"
@@ -4622,57 +4561,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "System",
-        "printedName": "System",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4680,13 +4568,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "DarkCoreFramework"
       },
       {
         "kind": "Import",
@@ -4704,8 +4585,8 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "DarkCoreFramework",
         "declAttributes": [
@@ -4713,105 +4594,73 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "InternetReachabilityView",
-        "printedName": "InternetReachabilityView",
+        "name": "PermissionViewModel",
+        "printedName": "PermissionViewModel",
         "children": [
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(configProvider:)",
+            "kind": "Function",
+            "name": "onRequestNotificationPermission",
+            "printedName": "onRequestNotificationPermission()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "InternetReachabilityView",
-                "printedName": "DarkCoreFramework.InternetReachabilityView",
-                "usr": "s:17DarkCoreFramework24InternetReachabilityViewV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ConfigurationProvider",
-                "printedName": "DarkCoreFramework.ConfigurationProvider",
-                "usr": "s:17DarkCoreFramework21ConfigurationProviderC"
+                "name": "Void",
+                "printedName": "()"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:17DarkCoreFramework24InternetReachabilityViewV14configProviderAcA013ConfigurationH0C_tcfc",
-            "mangledName": "$s17DarkCoreFramework24InternetReachabilityViewV14configProviderAcA013ConfigurationH0C_tcfc",
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework19PermissionViewModelC021onRequestNotificationD0yyF",
+            "mangledName": "$s17DarkCoreFramework19PermissionViewModelC021onRequestNotificationD0yyF",
             "moduleName": "DarkCoreFramework",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "AccessControl"
             ],
-            "init_kind": "Designated"
+            "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
+            "kind": "Function",
+            "name": "onSkip",
+            "printedName": "onSkip()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
+                "name": "Void",
+                "printedName": "()"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:17DarkCoreFramework24InternetReachabilityViewV4bodyQrvp",
-            "mangledName": "$s17DarkCoreFramework24InternetReachabilityViewV4bodyQrvp",
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework19PermissionViewModelC6onSkipyyF",
+            "mangledName": "$s17DarkCoreFramework19PermissionViewModelC6onSkipyyF",
             "moduleName": "DarkCoreFramework",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
               "AccessControl"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17DarkCoreFramework24InternetReachabilityViewV4bodyQrvg",
-                "mangledName": "$s17DarkCoreFramework24InternetReachabilityViewV4bodyQrvg",
-                "moduleName": "DarkCoreFramework",
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:17DarkCoreFramework24InternetReachabilityViewV",
-        "mangledName": "$s17DarkCoreFramework24InternetReachabilityViewV",
+        "declKind": "Class",
+        "usr": "s:17DarkCoreFramework19PermissionViewModelC",
+        "mangledName": "$s17DarkCoreFramework19PermissionViewModelC",
         "moduleName": "DarkCoreFramework",
         "declAttributes": [
-          "Preconcurrency",
-          "Custom",
           "AccessControl"
         ],
+        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -4829,39 +4678,32 @@
           },
           {
             "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
                   }
                 ]
               }
             ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "PermissionProtocol",
+            "printedName": "PermissionProtocol",
+            "usr": "s:17DarkCoreFramework18PermissionProtocolP",
+            "mangledName": "$s17DarkCoreFramework18PermissionProtocolP"
           }
         ]
       },
@@ -5836,163 +5678,207 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PushNotificationServiceProtocol",
-        "printedName": "PushNotificationServiceProtocol",
+        "name": "HTTPMethod",
+        "printedName": "HTTPMethod",
         "children": [
           {
-            "kind": "Function",
-            "name": "configure",
-            "printedName": "configure()",
+            "kind": "Var",
+            "name": "get",
+            "printedName": "get",
             "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP9configureyyF",
-            "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP9configureyyF",
-            "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PushNotificationServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : DarkCoreFramework.PushNotificationServiceProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setAPNSToken",
-            "printedName": "setAPNSToken(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP12setAPNSTokenyy10Foundation4DataVF",
-            "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP12setAPNSTokenyy10Foundation4DataVF",
-            "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PushNotificationServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : DarkCoreFramework.PushNotificationServiceProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getToken",
-            "printedName": "getToken(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.String?) -> ()",
+                "printedName": "(DarkCoreFramework.HTTPMethod.Type) -> DarkCoreFramework.HTTPMethod",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "HTTPMethod",
+                    "printedName": "DarkCoreFramework.HTTPMethod",
+                    "usr": "s:17DarkCoreFramework10HTTPMethodO"
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "name": "Metatype",
+                    "printedName": "DarkCoreFramework.HTTPMethod.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "HTTPMethod",
+                        "printedName": "DarkCoreFramework.HTTPMethod",
+                        "usr": "s:17DarkCoreFramework10HTTPMethodO"
                       }
-                    ],
-                    "usr": "s:Sq"
+                    ]
                   }
                 ]
               }
             ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP8getToken10completionyySSSgc_tF",
-            "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP8getToken10completionyySSSgc_tF",
-            "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PushNotificationServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : DarkCoreFramework.PushNotificationServiceProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setDelegate",
-            "printedName": "setDelegate(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP11setDelegateyyypSgF",
-            "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP11setDelegateyyypSgF",
-            "moduleName": "DarkCoreFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PushNotificationServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : DarkCoreFramework.PushNotificationServiceProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
+            "declKind": "EnumElement",
+            "usr": "s:17DarkCoreFramework10HTTPMethodO3getyA2CmF",
+            "mangledName": "$s17DarkCoreFramework10HTTPMethodO3getyA2CmF",
+            "moduleName": "DarkCoreFramework"
           },
           {
             "kind": "Var",
-            "name": "currentToken",
-            "printedName": "currentToken",
+            "name": "post",
+            "printedName": "post",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DarkCoreFramework.HTTPMethod.Type) -> DarkCoreFramework.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "DarkCoreFramework.HTTPMethod",
+                    "usr": "s:17DarkCoreFramework10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DarkCoreFramework.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "DarkCoreFramework.HTTPMethod",
+                        "usr": "s:17DarkCoreFramework10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17DarkCoreFramework10HTTPMethodO4postyA2CmF",
+            "mangledName": "$s17DarkCoreFramework10HTTPMethodO4postyA2CmF",
+            "moduleName": "DarkCoreFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "put",
+            "printedName": "put",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DarkCoreFramework.HTTPMethod.Type) -> DarkCoreFramework.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "DarkCoreFramework.HTTPMethod",
+                    "usr": "s:17DarkCoreFramework10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DarkCoreFramework.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "DarkCoreFramework.HTTPMethod",
+                        "usr": "s:17DarkCoreFramework10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17DarkCoreFramework10HTTPMethodO3putyA2CmF",
+            "mangledName": "$s17DarkCoreFramework10HTTPMethodO3putyA2CmF",
+            "moduleName": "DarkCoreFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "delete",
+            "printedName": "delete",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DarkCoreFramework.HTTPMethod.Type) -> DarkCoreFramework.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "DarkCoreFramework.HTTPMethod",
+                    "usr": "s:17DarkCoreFramework10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DarkCoreFramework.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "DarkCoreFramework.HTTPMethod",
+                        "usr": "s:17DarkCoreFramework10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17DarkCoreFramework10HTTPMethodO6deleteyA2CmF",
+            "mangledName": "$s17DarkCoreFramework10HTTPMethodO6deleteyA2CmF",
+            "moduleName": "DarkCoreFramework"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "DarkCoreFramework.HTTPMethod?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "HTTPMethod",
+                    "printedName": "DarkCoreFramework.HTTPMethod",
+                    "usr": "s:17DarkCoreFramework10HTTPMethodO"
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17DarkCoreFramework10HTTPMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s17DarkCoreFramework10HTTPMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "DarkCoreFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP12currentTokenSSSgvp",
-            "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP12currentTokenSSSgvp",
+            "usr": "s:17DarkCoreFramework10HTTPMethodO8rawValueSSvp",
+            "mangledName": "$s17DarkCoreFramework10HTTPMethodO8rawValueSSvp",
             "moduleName": "DarkCoreFramework",
-            "protocolReq": true,
+            "implicit": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -6001,9 +5887,152 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17DarkCoreFramework10HTTPMethodO8rawValueSSvg",
+                "mangledName": "$s17DarkCoreFramework10HTTPMethodO8rawValueSSvg",
+                "moduleName": "DarkCoreFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17DarkCoreFramework10HTTPMethodO",
+        "mangledName": "$s17DarkCoreFramework10HTTPMethodO",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkServiceProtocol",
+        "printedName": "NetworkServiceProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(url:method:parameters:headers:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "DarkCoreFramework.HTTPMethod",
+                "usr": "s:17DarkCoreFramework10HTTPMethodO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
                     "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
                       {
                         "kind": "TypeNominal",
                         "name": "String",
@@ -6011,25 +6040,58 @@
                         "usr": "s:SS"
                       }
                     ],
-                    "usr": "s:Sq"
+                    "usr": "s:SD"
                   }
                 ],
-                "declKind": "Accessor",
-                "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP12currentTokenSSSgvg",
-                "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP12currentTokenSSSgvg",
-                "moduleName": "DarkCoreFramework",
-                "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.PushNotificationServiceProtocol>",
-                "sugared_genericSig": "<Self where Self : DarkCoreFramework.PushNotificationServiceProtocol>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Foundation.Data, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Foundation.Data, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
               }
-            ]
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework22NetworkServiceProtocolP7request3url6method10parameters7headers10completionySS_AA10HTTPMethodOSDySSypGSgSDyS2SGSgys6ResultOy10Foundation4DataVs5Error_pGctF",
+            "mangledName": "$s17DarkCoreFramework22NetworkServiceProtocolP7request3url6method10parameters7headers10completionySS_AA10HTTPMethodOSDySSypGSgSDyS2SGSgys6ResultOy10Foundation4DataVs5Error_pGctF",
+            "moduleName": "DarkCoreFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : DarkCoreFramework.NetworkServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : DarkCoreFramework.NetworkServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:17DarkCoreFramework31PushNotificationServiceProtocolP",
-        "mangledName": "$s17DarkCoreFramework31PushNotificationServiceProtocolP",
+        "usr": "s:17DarkCoreFramework22NetworkServiceProtocolP",
+        "mangledName": "$s17DarkCoreFramework22NetworkServiceProtocolP",
         "moduleName": "DarkCoreFramework",
         "declAttributes": [
           "AccessControl"
@@ -6063,8 +6125,264 @@
       },
       {
         "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AlamofireNetworkService",
+        "printedName": "AlamofireNetworkService",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AlamofireNetworkService",
+                "printedName": "DarkCoreFramework.AlamofireNetworkService",
+                "usr": "s:17DarkCoreFramework23AlamofireNetworkServiceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17DarkCoreFramework23AlamofireNetworkServiceCACycfc",
+            "mangledName": "$s17DarkCoreFramework23AlamofireNetworkServiceCACycfc",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(url:method:parameters:headers:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "DarkCoreFramework.HTTPMethod",
+                "usr": "s:17DarkCoreFramework10HTTPMethodO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Foundation.Data, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Foundation.Data, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework23AlamofireNetworkServiceC7request3url6method10parameters7headers10completionySS_AA10HTTPMethodOSDySSypGSgSDyS2SGSgys6ResultOy10Foundation4DataVs5Error_pGctF",
+            "mangledName": "$s17DarkCoreFramework23AlamofireNetworkServiceC7request3url6method10parameters7headers10completionySS_AA10HTTPMethodOSDySSypGSgSDyS2SGSgys6ResultOy10Foundation4DataVs5Error_pGctF",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17DarkCoreFramework23AlamofireNetworkServiceC",
+        "mangledName": "$s17DarkCoreFramework23AlamofireNetworkServiceC",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkServiceProtocol",
+            "printedName": "NetworkServiceProtocol",
+            "usr": "s:17DarkCoreFramework22NetworkServiceProtocolP",
+            "mangledName": "$s17DarkCoreFramework22NetworkServiceProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
         "declKind": "Import",
         "moduleName": "DarkCoreFramework"
       },
@@ -6073,6 +6391,116 @@
         "name": "ConfigurationProvider",
         "printedName": "ConfigurationProvider",
         "children": [
+          {
+            "kind": "Var",
+            "name": "pushLink",
+            "printedName": "pushLink",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17DarkCoreFramework21ConfigurationProviderC8pushLinkSSSgvp",
+            "mangledName": "$s17DarkCoreFramework21ConfigurationProviderC8pushLinkSSSgvp",
+            "moduleName": "DarkCoreFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17DarkCoreFramework21ConfigurationProviderC8pushLinkSSSgvg",
+                "mangledName": "$s17DarkCoreFramework21ConfigurationProviderC8pushLinkSSSgvg",
+                "moduleName": "DarkCoreFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17DarkCoreFramework21ConfigurationProviderC8pushLinkSSSgvs",
+                "mangledName": "$s17DarkCoreFramework21ConfigurationProviderC8pushLinkSSSgvs",
+                "moduleName": "DarkCoreFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17DarkCoreFramework21ConfigurationProviderC8pushLinkSSSgvM",
+                "mangledName": "$s17DarkCoreFramework21ConfigurationProviderC8pushLinkSSSgvM",
+                "moduleName": "DarkCoreFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "config",
@@ -6955,8 +7383,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "DarkCoreFramework",
         "declAttributes": [
@@ -6965,251 +7393,10 @@
       },
       {
         "kind": "Import",
-        "name": "AppsFlyerLib",
-        "printedName": "AppsFlyerLib",
+        "name": "WebKit",
+        "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "DarkCoreFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AppsFlyerAnalyticsService",
-        "printedName": "AppsFlyerAnalyticsService",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AppsFlyerAnalyticsService",
-                "printedName": "DarkCoreFramework.AppsFlyerAnalyticsService",
-                "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceCACycfc",
-            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceCACycfc",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "configure",
-            "printedName": "configure(devKey:appId:delegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC9configure6devKey5appId8delegateySS_SSypSgtF",
-            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC9configure6devKey5appId8delegateySS_SSypSgtF",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC5startyyF",
-            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC5startyyF",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getUID",
-            "printedName": "getUID()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC6getUIDSSyF",
-            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC6getUIDSSyF",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setDeepLinkDelegate",
-            "printedName": "setDeepLinkDelegate(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC19setDeepLinkDelegateyyypSgF",
-            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC19setDeepLinkDelegateyyypSgF",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "handleForegroundNotification",
-            "printedName": "handleForegroundNotification(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC28handleForegroundNotificationyyypF",
-            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC28handleForegroundNotificationyyypF",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "handleNotificationResponse",
-            "printedName": "handleNotificationResponse(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.AnyHashable : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AnyHashable",
-                    "printedName": "Swift.AnyHashable",
-                    "usr": "s:s11AnyHashableV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC26handleNotificationResponseyySDys11AnyHashableVypGF",
-            "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC26handleNotificationResponseyySDys11AnyHashableVypGF",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:17DarkCoreFramework25AppsFlyerAnalyticsServiceC",
-        "mangledName": "$s17DarkCoreFramework25AppsFlyerAnalyticsServiceC",
-        "moduleName": "DarkCoreFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "AnalyticsServiceProtocol",
-            "printedName": "AnalyticsServiceProtocol",
-            "usr": "s:17DarkCoreFramework24AnalyticsServiceProtocolP",
-            "mangledName": "$s17DarkCoreFramework24AnalyticsServiceProtocolP"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -7222,103 +7409,59 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "PermissionView",
-        "printedName": "PermissionView",
+        "name": "ImageHelper",
+        "printedName": "ImageHelper",
         "children": [
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(_:)",
+            "kind": "Function",
+            "name": "safeImage",
+            "printedName": "safeImage(_:fallbackColor:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PermissionView",
-                "printedName": "DarkCoreFramework.PermissionView",
-                "usr": "s:17DarkCoreFramework14PermissionViewV"
+                "name": "Image",
+                "printedName": "SwiftUI.Image",
+                "usr": "s:7SwiftUI5ImageV"
               },
               {
                 "kind": "TypeNominal",
-                "name": "ConfigurationProvider",
-                "printedName": "DarkCoreFramework.ConfigurationProvider",
-                "usr": "s:17DarkCoreFramework21ConfigurationProviderC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17DarkCoreFramework14PermissionViewVyAcA21ConfigurationProviderCcfc",
-            "mangledName": "$s17DarkCoreFramework14PermissionViewVyAcA21ConfigurationProviderCcfc",
-            "moduleName": "DarkCoreFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
               {
                 "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI5ColorV"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:17DarkCoreFramework14PermissionViewV4bodyQrvp",
-            "mangledName": "$s17DarkCoreFramework14PermissionViewV4bodyQrvp",
+            "declKind": "Func",
+            "usr": "s:17DarkCoreFramework11ImageHelperO04safeD0_13fallbackColor7SwiftUI0D0VSS_AF0H0VtFZ",
+            "mangledName": "$s17DarkCoreFramework11ImageHelperO04safeD0_13fallbackColor7SwiftUI0D0VSS_AF0H0VtFZ",
             "moduleName": "DarkCoreFramework",
+            "static": true,
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17DarkCoreFramework14PermissionViewV4bodyQrvg",
-                "mangledName": "$s17DarkCoreFramework14PermissionViewV4bodyQrvg",
-                "moduleName": "DarkCoreFramework",
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:17DarkCoreFramework14PermissionViewV",
-        "mangledName": "$s17DarkCoreFramework14PermissionViewV",
+        "declKind": "Enum",
+        "usr": "s:17DarkCoreFramework11ImageHelperO",
+        "mangledName": "$s17DarkCoreFramework11ImageHelperO",
         "moduleName": "DarkCoreFramework",
         "declAttributes": [
-          "Preconcurrency",
-          "Custom",
           "AccessControl"
         ],
         "conformances": [
@@ -7335,42 +7478,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -7813,6 +7920,30 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "DarkCoreFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppsFlyerLib",
+        "printedName": "AppsFlyerLib",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DarkCoreFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "DarkCoreFramework"
       },
       {
@@ -7934,20 +8065,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/SplashScreen\/View\/SplashView.swift",
-      "kind": "StringLiteral",
-      "offset": 914,
-      "length": 6,
-      "value": "\"test\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/SplashScreen\/View\/SplashView.swift",
-      "kind": "StringLiteral",
-      "offset": 934,
-      "length": 6,
-      "value": "\"test\""
-    },
-    {
       "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/StaticData\/Configuration.swift",
       "kind": "BooleanLiteral",
       "offset": 247,
@@ -7990,6 +8107,62 @@
       "value": "false"
     },
     {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/InternetReachability\/View\/InternetReachabilityView.swift",
+      "kind": "StringLiteral",
+      "offset": 2123,
+      "length": 6,
+      "value": "\"test\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/InternetReachability\/View\/InternetReachabilityView.swift",
+      "kind": "StringLiteral",
+      "offset": 2143,
+      "length": 6,
+      "value": "\"test\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/BrowserView\/ViewModel\/BrowserManager.swift",
+      "kind": "Array",
+      "offset": 278,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/NotificationPermission\/View\/PermissionView.swift",
+      "kind": "StringLiteral",
+      "offset": 4668,
+      "length": 6,
+      "value": "\"test\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/NotificationPermission\/View\/PermissionView.swift",
+      "kind": "StringLiteral",
+      "offset": 4688,
+      "length": 6,
+      "value": "\"test\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/NotificationPermission\/View\/PermissionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4709,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/SplashScreen\/View\/SplashView.swift",
+      "kind": "StringLiteral",
+      "offset": 914,
+      "length": 6,
+      "value": "\"test\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/SplashScreen\/View\/SplashView.swift",
+      "kind": "StringLiteral",
+      "offset": 934,
+      "length": 6,
+      "value": "\"test\""
+    },
+    {
       "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/DarkAppDelegate.swift",
       "kind": "StringLiteral",
       "offset": 581,
@@ -8004,18 +8177,18 @@
       "value": "\"✅ DarkCore: Router set, initializing services...\""
     },
     {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/AppsFlyerService.swift",
-      "kind": "StringLiteral",
-      "offset": 344,
-      "length": 45,
-      "value": "\"com.kraken.appsflyer.conversionDataReceived\""
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/BrowserView\/View\/Coordinator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 276,
+      "length": 1,
+      "value": "0"
     },
     {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/AppsFlyerService.swift",
-      "kind": "Dictionary",
-      "offset": 444,
-      "length": 3,
-      "value": "[]"
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/BrowserView\/View\/Coordinator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 314,
+      "length": 2,
+      "value": "70"
     },
     {
       "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/Curtain\/View\/CurtainView.swift",
@@ -8037,13 +8210,6 @@
       "offset": 3672,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/BrowserView\/ViewModel\/BrowserManager.swift",
-      "kind": "Array",
-      "offset": 278,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/StaticData\/AppConfig.swift",
@@ -8165,6 +8331,13 @@
       "value": "\"back-main_color\""
     },
     {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/AppRouter.swift",
+      "kind": "Dictionary",
+      "offset": 1368,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Protocols\/NetworkServiceProtocol.swift",
       "kind": "StringLiteral",
       "offset": 166,
@@ -8193,6 +8366,139 @@
       "value": "\"DELETE\""
     },
     {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "Dictionary",
+      "offset": 293,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 370,
+      "length": 11,
+      "value": "\"dark_data\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 534,
+      "length": 22,
+      "value": "\"com.darkcore.default\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 714,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 739,
+      "length": 34,
+      "value": "\"DarkCore_\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 760,
+      "length": 12,
+      "value": "\"_InstallDate\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 892,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 917,
+      "length": 36,
+      "value": "\"DarkCore_\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 938,
+      "length": 14,
+      "value": "\"_InstallBundle\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1070,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1095,
+      "length": 34,
+      "value": "\"DarkCore_\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1116,
+      "length": 12,
+      "value": "\"_NotifyState\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1251,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1276,
+      "length": 39,
+      "value": "\"DarkCore_\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1297,
+      "length": 17,
+      "value": "\"_LastDateDeclined\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1643,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1726,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1743,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1815,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
       "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/BrowserView\/View\/BrowserView.swift",
       "kind": "StringLiteral",
       "offset": 687,
@@ -8207,193 +8513,18 @@
       "value": "\"test\""
     },
     {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/BrowserView\/View\/Coordinator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 276,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/BrowserView\/View\/Coordinator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 314,
-      "length": 2,
-      "value": "70"
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/InternetReachability\/View\/InternetReachabilityView.swift",
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/AppsFlyerService.swift",
       "kind": "StringLiteral",
-      "offset": 2123,
-      "length": 6,
-      "value": "\"test\""
+      "offset": 344,
+      "length": 45,
+      "value": "\"com.kraken.appsflyer.conversionDataReceived\""
     },
     {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/InternetReachability\/View\/InternetReachabilityView.swift",
-      "kind": "StringLiteral",
-      "offset": 2143,
-      "length": 6,
-      "value": "\"test\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/AppRouter.swift",
+      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/AppsFlyerService.swift",
       "kind": "Dictionary",
-      "offset": 1368,
+      "offset": 444,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "Dictionary",
-      "offset": 280,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 319,
-      "length": 11,
-      "value": "\"dark_data\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 483,
-      "length": 22,
-      "value": "\"com.darkcore.default\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 663,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 688,
-      "length": 34,
-      "value": "\"DarkCore_\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 709,
-      "length": 12,
-      "value": "\"_InstallDate\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 841,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 866,
-      "length": 36,
-      "value": "\"DarkCore_\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 887,
-      "length": 14,
-      "value": "\"_InstallBundle\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1019,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1044,
-      "length": 34,
-      "value": "\"DarkCore_\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1065,
-      "length": 12,
-      "value": "\"_NotifyState\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1200,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1225,
-      "length": 39,
-      "value": "\"DarkCore_\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1246,
-      "length": 17,
-      "value": "\"_LastDateDeclined\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1592,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1675,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1692,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/Domain\/Services\/ConfigurationProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1764,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/NotificationPermission\/View\/PermissionView.swift",
-      "kind": "StringLiteral",
-      "offset": 4668,
-      "length": 6,
-      "value": "\"test\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/NotificationPermission\/View\/PermissionView.swift",
-      "kind": "StringLiteral",
-      "offset": 4688,
-      "length": 6,
-      "value": "\"test\""
-    },
-    {
-      "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/DarkCore\/UI\/NotificationPermission\/View\/PermissionView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4709,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Volumes\/Shared\/Syndi\/Swift\/Frameworks\/DarkCore\/build\/Build\/Intermediates.noindex\/DarkCore.build\/Release-iphonesimulator\/DarkCoreFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
