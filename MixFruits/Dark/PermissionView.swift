@@ -34,7 +34,7 @@ struct PermissionView: View {
                     .font(.title)
                     .foregroundStyle(.white)
                 
-                Text("Stay tuned with best oggers from our casino")
+                Text("Stay tuned with best offers from our casino")
                     .multilineTextAlignment(.center)
                     .font(.title2)
                     .foregroundStyle(.white.opacity(0.5))
