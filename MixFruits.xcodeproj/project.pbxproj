@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		411C92382F309CB900B7EB67 /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411C92362F309CB700B7EB67 /* DarkCoreFramework.xcframework */; };
-		411C92392F309CB900B7EB67 /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 411C92362F309CB700B7EB67 /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		411C923C2F30A25700B7EB67 /* DarkCoreFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411C923A2F30A25400B7EB67 /* DarkCoreFramework.xcframework */; };
+		411C923D2F30A25700B7EB67 /* DarkCoreFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 411C923A2F30A25400B7EB67 /* DarkCoreFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		413CCE0E2EF94E1200B7478C /* notifications.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 413CCE072EF94E1200B7478C /* notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		413CCEAF2EF94FBC00B7478C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */; };
 		413CCEBC2EF94FEB00B7478C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CCEAE2EF94FBC00B7478C /* UserNotifications.framework */; };
@@ -48,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				411C92392F309CB900B7EB67 /* DarkCoreFramework.xcframework in Embed Frameworks */,
+				411C923D2F30A25700B7EB67 /* DarkCoreFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		411C92362F309CB700B7EB67 /* DarkCoreFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DarkCoreFramework.xcframework; sourceTree = "<group>"; };
+		411C923A2F30A25400B7EB67 /* DarkCoreFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DarkCoreFramework.xcframework; sourceTree = "<group>"; };
 		4136EF7F2ED99567003DB36E /* MixFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413CCE072EF94E1200B7478C /* notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		413CCE6C2EF94F7900B7478C /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,7 +120,7 @@
 				41D6D6D42EE1E314004CD36B /* Swinject in Frameworks */,
 				8BAF3AE59192C1C5A231C5F2 /* Pods_MixFruits.framework in Frameworks */,
 				413CCEBC2EF94FEB00B7478C /* UserNotifications.framework in Frameworks */,
-				411C92382F309CB900B7EB67 /* DarkCoreFramework.xcframework in Frameworks */,
+				411C923C2F30A25700B7EB67 /* DarkCoreFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +146,7 @@
 				4136EF802ED99567003DB36E /* Products */,
 				EA10536239F1EE4B3437EB9F /* Pods */,
 				9969480C5D28ADD59DD6740B /* Frameworks */,
-				411C92362F309CB700B7EB67 /* DarkCoreFramework.xcframework */,
+				411C923A2F30A25400B7EB67 /* DarkCoreFramework.xcframework */,
 			);
 			sourceTree = "<group>";
 		};
