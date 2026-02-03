@@ -19,9 +19,7 @@ struct MainContentView: View {
 #Preview {
     var darkCore = DarkCore.configure(config: Configuration(
         appsDevKey: "7N9GPhHowZLgGHEPPu5feg",
-        appleAppId: "6756780702",
-        backIsImage: true,
-        splitScreen: false
+        appleAppId: "6756780702"
     ), clearView: ContentView())
    
     MainContentView()

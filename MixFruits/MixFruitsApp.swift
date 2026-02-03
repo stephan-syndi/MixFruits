@@ -17,7 +17,7 @@ struct MixFruitsApp: App {
     let config = Configuration(
         appsDevKey: "7N9GPhHowZLgGHEPPu5feg",
         appleAppId: "6756780702",
-        backIsImage: true,
+        endpoint: "https://mixfruitsrecipes.com",
         firebaseGCMSenderId: "461860857468"
     )
 
