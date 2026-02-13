@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		smzl/jWqLehvJU79VEz8H4s1VgA=
+		Jd2IpdnTUxj4tLUC1GwVV3t8IU4=
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		TVYqJFeBmgZC/GXqCLx9SoxMbNE=
+		POs3KInUsol9/fVOA+lu1UcOkX0=
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		6cqAk4AldrMbF5VCcn9bYVsveGg=
+		/mHFflGOwDYNpzVXU48/5D9mo5U=
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		YUQasBfRj2deZPq7PE6QBn4wup0=
+		Pst/i2eMiEvxgqRdmH9hrOg3T4s=
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YUQasBfRj2deZPq7PE6QBn4wup0=
+		Pst/i2eMiEvxgqRdmH9hrOg3T4s=
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HlV8hHd6FhduD8e7q6k0/exhL8k=
+		QZKNnJKSugST9HQSOXKWU4la6Is=
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		6cqAk4AldrMbF5VCcn9bYVsveGg=
+		/mHFflGOwDYNpzVXU48/5D9mo5U=
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8q8NISYh3DMmdUqAiyHC1WVXNTg=
+		5HFhDabxAXYha7VSvG2qrlpJ23M=
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8q8NISYh3DMmdUqAiyHC1WVXNTg=
+		5HFhDabxAXYha7VSvG2qrlpJ23M=
 		</data>
 		<key>Modules/DarkCoreFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4tglh3hhMi/HoCtxLT4yoEM4lgA=
+		fLsZZyKcaELe/B1NGBXJd7BHXfc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -111,28 +111,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fxzw7LbXhPt6jCQE3d0uq2kY2Rxh91vII3Uy3A8lKYE=
+			X8j8BxqinAT+JtE3DkkJaQv1xmP2OlmCLY204t4/3Fc=
 			</data>
 		</dict>
 		<key>Modules/DarkCoreFramework.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RgJf00DChflu2aISh08131qKuXVCgCf8KGvIaDPswSE=
+			pvri9Cv+/L8HMmy88NTwGbl9iCojStHDQf9Rm/RvPvU=
 			</data>
 		</dict>
 		<key>Modules/DarkCoreFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZtFNyULnHtyr4yR17iD9+nDoK6Mg4Dd8a1LF9naEKuU=
+			bxgJMRjQ6zg17P3ot+3z+qT2ybO5m9gDbRnHTl2YXhU=
 			</data>
 		</dict>
 		<key>Modules/DarkCoreFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			16bFAw3GO2nxI896dAu/773EH8p5wsSyorfUeqc/6x8=
+			Okd8ANVQjysavrWXaxYKJu7jVU9e6PP2+VLXgr+Dpbw=
 			</data>
 		</dict>
 		<key>Modules/DarkCoreFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -146,28 +146,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			16bFAw3GO2nxI896dAu/773EH8p5wsSyorfUeqc/6x8=
+			Okd8ANVQjysavrWXaxYKJu7jVU9e6PP2+VLXgr+Dpbw=
 			</data>
 		</dict>
 		<key>Modules/DarkCoreFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xU4kctQJ15jmvjBXqYkemSMnyp6cVDZnhGjCAImfEfY=
+			/pcCKfih81fIDX659zj7Yukab5ZG1+7h//g2TAUdND4=
 			</data>
 		</dict>
 		<key>Modules/DarkCoreFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZtFNyULnHtyr4yR17iD9+nDoK6Mg4Dd8a1LF9naEKuU=
+			bxgJMRjQ6zg17P3ot+3z+qT2ybO5m9gDbRnHTl2YXhU=
 			</data>
 		</dict>
 		<key>Modules/DarkCoreFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qpznnKGSYihWxNef7B11sEw1XV/yJtcTMkO5ddKAzng=
+			SpUQmrNCNmnwR8xkmjZ8H3nhPOgnTWPLFOC8hczgzkI=
 			</data>
 		</dict>
 		<key>Modules/DarkCoreFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -181,14 +181,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qpznnKGSYihWxNef7B11sEw1XV/yJtcTMkO5ddKAzng=
+			SpUQmrNCNmnwR8xkmjZ8H3nhPOgnTWPLFOC8hczgzkI=
 			</data>
 		</dict>
 		<key>Modules/DarkCoreFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xna2m2Zm9BJwvpctvFMZ1woJEi9SxPwbTfpNSUu4y3A=
+			Xok6hV6/j3ecXq7i6PI4oWyJE546RcK7gl0baw3jx7g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -6,7 +6,7 @@ target 'MixFruits' do
   use_frameworks!
   
   # Pods for MixFruits
-  pod 'Alamofire', '= 5.8'
+  pod 'Alamofire', '~> 5.9'
   pod 'AppsFlyerFramework', '= 6.12'
   pod 'Firebase/Core', '12.7.0'
   pod 'Firebase/Messaging', '12.7.0'
@@ -25,7 +25,7 @@ end
 target 'notifications' do
   use_frameworks!
   
-  pod 'Alamofire', '= 5.8'
+  pod 'Alamofire', '~> 5.9'
   pod 'AppsFlyerFramework', '= 6.12'
   pod 'Firebase/Core', '12.7.0'
   pod 'Firebase/Messaging', '12.7.0'
